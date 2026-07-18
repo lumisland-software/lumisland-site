@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="admin-page">
@@ -21,7 +21,7 @@
           <circle cx="22" cy="8" r="3" fill="#F6B84B"></circle>
           <path d="M30 43h16l7 9H30v-9Z" fill="#EAF2FF"></path>
         </svg>
-        <span>Lumisland Admin</span>
+        <span class="brand-word">Lumisland Admin</span>
       </a>
       <nav class="site-nav">
         <a href="index.html">Ver site</a>
@@ -31,21 +31,21 @@
 
   <main class="admin-hero">
     <div class="container">
-      <p class="eyebrow">Painel simples</p>
-      <h1>Editar conteudo sem abrir o codigo.</h1>
-      <p class="hero-copy" style="color:#617086">Esta versao guarda alteracoes no navegador e permite exportar um JSON. Para publicar automaticamente no site, o proximo passo tecnico e ligar um CMS ou backend seguro.</p>
+      <p class="eyebrow"><span class="eyebrow-line"></span> Painel simples</p>
+      <h1>Editar conte&uacute;do sem abrir o c&oacute;digo.</h1>
+      <p class="admin-lead">Esta vers&atilde;o guarda altera&ccedil;&otilde;es no navegador e permite exportar um JSON. Para publicar automaticamente no site, o pr&oacute;ximo passo t&eacute;cnico &eacute; ligar um CMS ou backend seguro.</p>
 
       <form id="admin-form" class="admin-panel">
         <label>
-          Titulo principal
+          T&iacute;tulo principal
           <input id="headline" type="text" value="Transformamos processos confusos em sistemas simples de usar.">
         </label>
         <label>
           Texto de apoio
-          <textarea id="subheadline" rows="4">A Lumisland cria ferramentas digitais para pequenos negocios que querem vender mais, organizar melhor e reduzir trabalho manual.</textarea>
+          <textarea id="subheadline" rows="4">A Lumisland cria sistemas digitais para pequenos neg&oacute;cios que querem trabalhar com mais clareza e reduzir trabalho manual.</textarea>
         </label>
         <label>
-          Texto do botao principal
+          Texto do bot&atilde;o principal
           <input id="primaryCta" type="text" value="Pedir uma proposta">
         </label>
         <label>
@@ -53,8 +53,8 @@
           <input id="email" type="email" value="contato.lumisland@gmail.com">
         </label>
         <div class="admin-actions">
-          <button class="btn btn-primary" type="button" id="export-content">Exportar JSON</button>
-          <button class="btn btn-secondary" type="button" id="reset-content">Limpar alteracoes</button>
+          <button class="button button-primary" type="button" id="export-content">Exportar JSON</button>
+          <button class="button button-dark" type="button" id="reset-content">Limpar altera&ccedil;&otilde;es</button>
         </div>
       </form>
 
