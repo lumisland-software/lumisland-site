@@ -1,218 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>lumisland — Software simples para o seu negócio</title>
-<meta name="description" content="A lumisland cria sistemas simples e acessíveis para pequenos negócios: gestão de oficinas mecânicas e de frotas TVDE.">
-<meta name="theme-color" content="#1A1B3A">
-<link rel="canonical" href="https://lumisland.pt/">
-<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_PT">
-<meta property="og:title" content="lumisland — Software simples para o seu negócio">
-<meta property="og:description" content="Sistemas simples e acessíveis para pequenos negócios, oficinas mecânicas e frotas TVDE.">
-<meta property="og:url" content="https://lumisland.pt/">
-<meta property="og:site_name" content="lumisland">
-<meta name="twitter:card" content="summary">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumisland | Software simples para negócios que querem crescer</title>
+  <meta name="description" content="A Lumisland cria software simples, moderno e acessivel para pequenos negocios em Portugal: sistemas de gestao, automacoes, portais, dashboards e ferramentas sob medida.">
+  <meta name="theme-color" content="#07111F">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lumisland.pt/">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Lumisland | Software simples para negocios que querem crescer">
+  <meta property="og:description" content="Sistemas de gestao, automacoes, portais e dashboards criados para pequenos negocios em Portugal.">
+  <meta property="og:url" content="https://lumisland.pt/">
+  <meta property="og:site_name" content="Lumisland">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lumisland",
+    "url": "https://lumisland.pt/",
+    "email": "contato.lumisland@gmail.com",
+    "description": "Software simples, moderno e acessivel para pequenos negocios em Portugal.",
+    "areaServed": "Portugal",
+    "sameAs": ["https://github.com/lumisland-software"]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteudo</a>
 
-<svg style="display:none">
-  <symbol id="logo-color" viewBox="0 0 100 100">
-    <path d="M24,88 L74,88 L80,82 L80,76 L74,70 L24,70 Z" fill="#1A1B3A"/>
-    <path d="M25,70 L39,70 L39,30 L32,10 L25,30 Z" fill="#FFB84D"/>
-    <circle cx="32" cy="5" r="4.2" fill="#6C5CE7"/>
-  </symbol>
-  <symbol id="logo-mono" viewBox="0 0 100 100">
-    <path d="M24,88 L74,88 L80,82 L80,76 L74,70 L24,70 Z" fill="currentColor"/>
-    <path d="M25,70 L39,70 L39,30 L32,10 L25,30 Z" fill="currentColor"/>
-    <circle cx="32" cy="5" r="4.2" fill="currentColor"/>
-  </symbol>
-</svg>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Lumisland">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="8" y="43" width="39" height="9" rx="2" fill="#F6B84B"></rect>
+          <path d="M16 43h12V19l-6-9-6 9v24Z" fill="#27C7B8"></path>
+          <circle cx="22" cy="8" r="3" fill="#F6B84B"></circle>
+          <path d="M30 43h16l7 9H30v-9Z" fill="#EAF2FF"></path>
+        </svg>
+        <span>Lumisland</span>
+      </a>
 
-<header>
-  <div class="container">
-    <a href="#top" class="brand">
-      <svg class="logo-icon" viewBox="0 0 100 100"><use href="#logo-color"/></svg>
-      <span class="brand-word"><b>lumi</b><span>sland</span></span>
-    </a>
-    <input type="checkbox" id="nav-toggle">
-    <nav class="nav-links">
-      <a href="#sobre">Sobre</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#contacto">Contacto</a>
-      <a href="#contacto" class="btn btn-dark nav-cta">Falar com a gente</a>
-    </nav>
-    <label for="nav-toggle" class="nav-burger" aria-label="Abrir menu"><span></span><span></span><span></span></label>
-  </div>
-</header>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-<main id="top">
-  <section class="hero">
-    <svg class="hero-watermark" viewBox="0 0 100 100"><use href="#logo-mono"/></svg>
-    <div class="container">
-      <span class="kicker" style="color:var(--amber)">Software para quem empreende</span>
-      <h1>A luz que faltava para organizar o seu negócio.</h1>
-      <p>A lumisland cria sistemas simples e acessíveis para pequenos negócios que precisam de clareza no dia a dia — sem complicação, sem jargão técnico.</p>
-      <div class="hero-actions">
-        <a href="#produtos" class="btn btn-primary">Ver produtos</a>
-        <a href="#contacto" class="btn btn-outline">Falar com a gente</a>
-      </div>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <a href="#produtos">Produtos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#precos">Precos</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto" class="nav-action">Contacto</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="sobre">
-    <div class="container">
-      <div class="section-head">
-        <span class="kicker">Sobre a lumisland</span>
-        <h2>Feito para quem toca o negócio sozinho — ou quase.</h2>
-      </div>
-      <p class="about-lead">Software simples e acessível para pequenos negócios e autônomos que querem crescer sem complicação. Cada sistema que criamos nasce de um problema real de quem administra o próprio negócio no dia a dia.</p>
-      <div class="values-grid">
-        <div class="value-card">
-          <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <h3>Clara</h3>
-          <p>Explicamos antes de complicar. Sem manual de 40 páginas.</p>
-        </div>
-        <div class="value-card">
-          <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-          <h3>Acolhedora</h3>
-          <p>Falamos a língua de quem empreende — não a de quem programa.</p>
-        </div>
-        <div class="value-card">
-          <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-          <h3>Otimista</h3>
-          <p>Celebramos cada pequena vitória do seu negócio.</p>
-        </div>
-        <div class="value-card">
-          <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          <h3>Confiável</h3>
-          <p>Presentes todos os dias, sem sustos nem surpresas.</p>
+  <main id="conteudo">
+    <section id="inicio" class="hero-section">
+      <div class="hero-dashboard" aria-hidden="true">
+        <div class="dash-shell">
+          <div class="dash-sidebar">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="dash-main">
+            <div class="dash-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="dash-grid">
+              <div class="dash-card wide">
+                <i></i><b></b><b></b><b></b>
+              </div>
+              <div class="dash-card metric"><strong>+38%</strong><small>tempo poupado</small></div>
+              <div class="dash-card list"><i></i><i></i><i></i><i></i></div>
+              <div class="dash-card chart"><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="produtos" class="produtos-bg">
-    <div class="container">
-      <div class="section-head">
-        <span class="kicker">Nossos sistemas</span>
-        <h2>Soluções prontas para o seu setor.</h2>
-        <p>Dois produtos já disponíveis, feitos sob medida para o dia a dia de quem administra oficinas ou frotas.</p>
+      <div class="container hero-content">
+        <p class="eyebrow">Software, automacao e clareza operacional</p>
+        <h1>Transformamos processos confusos em sistemas simples de usar.</h1>
+        <p class="hero-copy">A Lumisland cria ferramentas digitais para pequenos negocios que querem vender mais, organizar melhor e parar de depender de planilhas soltas, mensagens perdidas e trabalho manual repetido.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Pedir uma proposta</a>
+          <a class="btn btn-secondary" href="#portfolio">Ver exemplos</a>
+        </div>
+        <div class="hero-proof" aria-label="Destaques">
+          <span>Sites comerciais</span>
+          <span>Sistemas de gestao</span>
+          <span>Dashboards e automacoes</span>
+        </div>
       </div>
-      <div class="products-grid">
+    </section>
 
-        <div class="product-card">
-          <div class="product-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-          </div>
-          <h3>lumisland para Oficinas Mecânicas</h3>
-          <p>Organize agendamentos, orçamentos e o histórico de cada veículo em um só lugar — sem planilha, sem post-it.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Agenda de serviços e horários</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Orçamentos digitais em segundos</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Histórico completo por veículo e cliente</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Controle de peças e estoque</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Avisos automáticos por WhatsApp/e-mail</li>
-          </ul>
-          <a href="#contacto" class="btn btn-dark" data-product="Oficinas Mecânicas" onclick="preencherProduto(this)">Quero conhecer</a>
+    <section class="trust-band" aria-label="Para quem trabalhamos">
+      <div class="container trust-inner">
+        <span>Oficinas</span>
+        <span>Frotas</span>
+        <span>Servicos locais</span>
+        <span>Equipas pequenas</span>
+        <span>Projetos personalizados</span>
+      </div>
+    </section>
+
+    <section id="produtos" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Produtos e solucoes</p>
+          <h2>Comecamos pelo que resolve o dia a dia.</h2>
+          <p>Sem promessa vaga. A Lumisland cria sistemas pequenos o suficiente para serem usados todos os dias e fortes o suficiente para sustentar crescimento.</p>
         </div>
 
-        <div class="product-card">
-          <div class="product-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-          </div>
-          <h3>lumisland para Frotas TVDE</h3>
-          <p>Acompanhe veículos, motoristas e custos da sua frota em tempo real, com alertas antes que vire problema.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Gestão de veículos e motoristas</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Controle de quilometragem e manutenção preventiva</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Alertas de documentação e vencimentos</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Relatórios de rentabilidade por veículo/motorista</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Painel único para toda a frota</li>
-          </ul>
-          <a href="#contacto" class="btn btn-dark" data-product="Frota TVDE" onclick="preencherProduto(this)">Quero conhecer</a>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="card-topline">
+              <span class="product-tag">Produto em desenvolvimento</span>
+              <span class="product-icon">01</span>
+            </div>
+            <h3>SaaS para oficinas</h3>
+            <p>Gestao de clientes, veiculos, ordens de servico, diagnosticos, orcamentos, stock, faturacao e portal do cliente.</p>
+            <ul class="check-list">
+              <li>Historico completo por cliente e veiculo</li>
+              <li>Status em tempo real para o cliente</li>
+              <li>Orcamentos e documentos profissionais</li>
+              <li>Preparado para integracao Moloni</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-product="SaaS para oficinas">Quero este sistema</a>
+          </article>
+
+          <article class="product-card">
+            <div class="card-topline">
+              <span class="product-tag">Primeiros clientes</span>
+              <span class="product-icon">02</span>
+            </div>
+            <h3>Gestao para frotas TVDE</h3>
+            <p>Fecho semanal, ganhos por motorista, custos, IVA, aluguer, portagens, combustivel e relatorios para decisao.</p>
+            <ul class="check-list">
+              <li>Calculo liquido por motorista</li>
+              <li>Importacao de ficheiros Uber, Bolt e PRIO</li>
+              <li>Relatorios semanais e mensais</li>
+              <li>Alertas de custos e diferencas</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-product="Gestao para frotas TVDE">Quero este sistema</a>
+          </article>
+
+          <article class="product-card accent">
+            <div class="card-topline">
+              <span class="product-tag">Sob medida</span>
+              <span class="product-icon">03</span>
+            </div>
+            <h3>Software personalizado</h3>
+            <p>Para negocios que ainda nao precisam de um ERP gigante, mas ja sentem que WhatsApp, Excel e papel estao a travar a operacao.</p>
+            <ul class="check-list">
+              <li>Sites com area de contacto e SEO</li>
+              <li>Paineis administrativos simples</li>
+              <li>Automacoes de tarefas repetidas</li>
+              <li>Dashboards operacionais</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-product="Software personalizado">Quero uma solucao</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section-dark">
+      <div class="container">
+        <div class="section-heading left">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Exemplos do tipo de produto que a Lumisland entrega.</h2>
+          <p>Estes mockups mostram a direcao visual e funcional dos primeiros sistemas. O objetivo e vender clareza: menos ruido, mais controlo.</p>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div class="portfolio-grid">
+          <article class="portfolio-item">
+            <div class="mockup mockup-workshop">
+              <div class="mockup-head"><span></span><span></span><span></span></div>
+              <div class="mockup-title"></div>
+              <div class="mockup-row strong"></div>
+              <div class="mockup-row"></div>
+              <div class="mockup-row short"></div>
+              <div class="mockup-stats"><span></span><span></span><span></span></div>
+            </div>
+            <h3>Portal de oficina</h3>
+            <p>Entrada do veiculo, diagnostico, orcamento, reparacao e entrega final num fluxo unico.</p>
+          </article>
 
-  <section id="contacto" class="contacto-bg">
-    <div class="container">
-      <div class="section-head">
-        <span class="kicker" style="color:var(--amber)">Fale com a gente</span>
-        <h2>Conte um pouco sobre o seu negócio.</h2>
-        <p>Preencha o formulário e entraremos em contacto. Ainda estamos começando, então toda conversa importa.</p>
+          <article class="portfolio-item">
+            <div class="mockup mockup-fleet">
+              <div class="map-line one"></div>
+              <div class="map-line two"></div>
+              <div class="map-pin"></div>
+              <div class="fleet-panel"><b></b><span></span><span></span></div>
+            </div>
+            <h3>Dashboard de frota</h3>
+            <p>Visao rapida de ganhos, descontos, custos e valor final a pagar por motorista.</p>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="mockup mockup-sales">
+              <div class="sales-bars"><span></span><span></span><span></span><span></span></div>
+              <div class="sales-card"></div>
+              <div class="sales-card small"></div>
+            </div>
+            <h3>Site comercial</h3>
+            <p>Landing page, SEO, precos, contacto e conteudo pensado para gerar conversas comerciais.</p>
+          </article>
+        </div>
       </div>
-      <div class="contact-wrap">
-        <form id="contact-form" onsubmit="enviarContacto(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nome">Nome*</label>
-              <input type="text" id="nome" required placeholder="Seu nome">
-            </div>
-            <div class="form-group">
-              <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" placeholder="Nome do seu negócio">
-            </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-section">
+        <div>
+          <p class="eyebrow">Metodo</p>
+          <h2>Construimos pequeno, validamos cedo e melhoramos com uso real.</h2>
+          <p>O erro comum e tentar criar uma plataforma enorme antes de provar que alguem usa. A Lumisland trabalha com versoes uteis, publicaveis e evolutivas.</p>
+        </div>
+        <div class="steps">
+          <div><span>1</span><strong>Diagnostico</strong><p>Mapeamos o processo, o problema real e o que precisa ser automatizado primeiro.</p></div>
+          <div><span>2</span><strong>Primeira versao</strong><p>Entregamos uma base funcional, com design profissional e foco no uso diario.</p></div>
+          <div><span>3</span><strong>Evolucao</strong><p>Melhoramos com dados reais, feedback dos utilizadores e prioridades comerciais.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="precos" class="section pricing-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Precos</p>
+          <h2>Planos simples para comecar sem peso.</h2>
+          <p>Valores de referencia para primeiras implementacoes. O preco final depende do escopo, integracoes e urgencia.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Presenca Digital</h3>
+            <p class="price">desde 490€</p>
+            <p>Site comercial rapido, moderno e preparado para contacto com clientes.</p>
+            <ul class="check-list">
+              <li>Landing page profissional</li>
+              <li>SEO base e estrutura Google</li>
+              <li>Formulario por e-mail</li>
+            </ul>
+            <a href="#contacto" class="btn btn-secondary" data-product="Presenca Digital">Pedir proposta</a>
+          </article>
+
+          <article class="price-card featured">
+            <span class="popular">Mais indicado</span>
+            <h3>Sistema Inicial</h3>
+            <p class="price">desde 1.500€</p>
+            <p>Primeira versao de um sistema de gestao para resolver um fluxo principal.</p>
+            <ul class="check-list">
+              <li>Dashboard e area administrativa</li>
+              <li>Base de dados e login</li>
+              <li>Fluxo principal personalizado</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary" data-product="Sistema Inicial">Pedir proposta</a>
+          </article>
+
+          <article class="price-card">
+            <h3>SaaS Evolutivo</h3>
+            <p class="price">sob proposta</p>
+            <p>Produto completo com varios modulos, integracoes e manutencao continua.</p>
+            <ul class="check-list">
+              <li>Arquitetura escalavel</li>
+              <li>Integracoes externas</li>
+              <li>Suporte e melhorias mensais</li>
+            </ul>
+            <a href="#contacto" class="btn btn-secondary" data-product="SaaS Evolutivo">Falar sobre SaaS</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-heading left">
+          <p class="eyebrow">Blog</p>
+          <h2>Conteudo para atrair clientes e educar o mercado.</h2>
+          <p>Primeiros temas prontos para publicar e transformar duvidas comuns em entrada de contacto.</p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <span>Gestao</span>
+            <h3>Quando uma pequena empresa deve parar de usar planilhas?</h3>
+            <p>Um guia pratico para identificar sinais de desorganizacao, retrabalho e perda de dinheiro.</p>
+          </article>
+          <article class="blog-card">
+            <span>Oficinas</span>
+            <h3>Como um portal do cliente melhora a confianca na oficina</h3>
+            <p>Status em tempo real, historico e comunicacao clara reduzem chamadas e aumentam percepcao de profissionalismo.</p>
+          </article>
+          <article class="blog-card">
+            <span>Automacao</span>
+            <h3>Automatizar nao e substituir pessoas, e proteger tempo</h3>
+            <p>O melhor software tira da equipa as tarefas repetitivas para ela focar no que realmente exige decisao.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Fale sobre o teu negocio. Eu transformo isso num plano claro.</h2>
+          <p>Se ainda nao sabes exatamente o que precisas, tudo bem. O ponto de partida e entender onde o teu processo perde tempo, dinheiro ou controlo.</p>
+          <div class="contact-facts">
+            <span>Resposta inicial por e-mail</span>
+            <span>Atendimento em Portugal</span>
+            <span>Projetos por escopo ou mensalidade</span>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">E-mail*</label>
-              <input type="email" id="email" required placeholder="voce@email.com">
-            </div>
-            <div class="form-group">
-              <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" placeholder="+351 900 000 000">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group full">
-              <label for="produto">Produto de interesse</label>
-              <select id="produto">
-                <option value="Não sei ainda">Ainda não sei / quero conhecer os dois</option>
-                <option value="Oficinas Mecânicas">Oficinas Mecânicas</option>
-                <option value="Frota TVDE">Frota TVDE</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group full">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" placeholder="Conte um pouco sobre o seu negócio e o que você procura"></textarea>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%">Enviar mensagem</button>
-          <p class="form-note">Isso vai abrir seu aplicativo de e-mail com a mensagem pronta para michael.claro@lumisland.pt</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Nome*
+            <input type="text" id="nome" name="nome" autocomplete="name" required placeholder="O teu nome">
+          </label>
+          <label>
+            Empresa
+            <input type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Nome do negocio">
+          </label>
+          <label>
+            E-mail*
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="nome@email.com">
+          </label>
+          <label>
+            Telefone
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="+351 900 000 000">
+          </label>
+          <label>
+            Interesse
+            <select id="produto" name="produto">
+              <option value="Ainda nao sei">Ainda nao sei</option>
+              <option value="Site comercial">Site comercial</option>
+              <option value="Sistema de gestao">Sistema de gestao</option>
+              <option value="SaaS para oficinas">SaaS para oficinas</option>
+              <option value="Gestao para frotas TVDE">Gestao para frotas TVDE</option>
+              <option value="Software personalizado">Software personalizado</option>
+            </select>
+          </label>
+          <label class="full">
+            Mensagem
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conta rapidamente o que queres organizar ou vender melhor"></textarea>
+          </label>
+          <button class="btn btn-primary full" type="submit">Enviar mensagem</button>
+          <p class="form-status" id="form-status" role="status"></p>
         </form>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <a href="#top" class="brand on-dark">
-        <svg class="logo-icon mono" viewBox="0 0 100 100"><use href="#logo-mono"/></svg>
-        <span class="brand-word"><b>lumi</b><span>sland</span></span>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand footer-brand">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="8" y="43" width="39" height="9" rx="2" fill="#F6B84B"></rect>
+          <path d="M16 43h12V19l-6-9-6 9v24Z" fill="#27C7B8"></path>
+          <circle cx="22" cy="8" r="3" fill="#F6B84B"></circle>
+          <path d="M30 43h16l7 9H30v-9Z" fill="#EAF2FF"></path>
+        </svg>
+        <span>Lumisland</span>
       </a>
-      <span class="footer-tagline">"A luz que buscávamos."</span>
+      <div class="footer-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#precos">Precos</a>
+        <a href="#blog">Blog</a>
+        <a href="admin.html">Admin</a>
+        <a href="mailto:contato.lumisland@gmail.com">contato.lumisland@gmail.com</a>
+      </div>
+      <p>© 2026 Lumisland. Software simples para negocios que querem crescer.</p>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 lumisland. Todos os direitos reservados.</span>
-      <a href="mailto:michael.claro@lumisland.pt">michael.claro@lumisland.pt</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="js/app.js" defer></script>
-
+  <script src="js/app.js" defer></script>
 </body>
 </html>
