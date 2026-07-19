@@ -1530,6 +1530,15 @@ h1 span {
   font-weight: 600;
 }
 
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .form-full {
   grid-column: 1 / -1;
 }
@@ -1613,6 +1622,45 @@ h1 span {
   border-top: 1px solid rgba(255, 255, 255, 0.09);
   color: rgba(255, 255, 255, 0.38);
   font-size: 11px;
+}
+
+.thanks-page {
+  min-height: 100vh;
+  background: var(--ink-deep);
+  color: var(--white);
+}
+
+.thanks-main {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 150px 0 80px;
+  background:
+    linear-gradient(90deg, rgba(10, 17, 28, 0.98), rgba(10, 17, 28, 0.74)),
+    url("../assets/images/lumisland-workshop-hero.png") center / cover no-repeat;
+}
+
+.thanks-card {
+  max-width: 720px;
+}
+
+.thanks-card h1 {
+  margin-bottom: 20px;
+  font-size: clamp(54px, 7vw, 92px);
+}
+
+.thanks-card p {
+  max-width: 560px;
+  margin-bottom: 32px;
+  color: rgba(255, 254, 250, 0.76);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.thanks-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 @media (max-width: 1040px) {

@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self' mailto:; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self' https://formsubmit.co mailto:; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
   <link rel="canonical" href="https://lumisland.pt/">
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
   <link rel="manifest" href="site.webmanifest">
@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260719-2">
+  <link rel="stylesheet" href="css/styles.css?v=20260719-3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -273,7 +273,11 @@
     <section id="contacto" class="contact-section">
       <div class="container contact-grid">
         <div class="contact-copy"><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Vamos conversar</p><h2>Tem um processo que est&aacute; a pedir mais clareza?</h2><p>Conte-nos o que acontece hoje. Respondemos com uma primeira leitura e um pr&oacute;ximo passo concreto.</p><div class="contact-email"><span>E-mail</span><a href="mailto:contacto@lumisland.pt">contacto@lumisland.pt <span aria-hidden="true">↗</span></a></div></div>
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/contacto@lumisland.pt" method="POST">
+          <input type="hidden" name="_subject" value="Novo contacto via site Lumisland">
+          <input type="hidden" name="_next" value="https://lumisland.pt/obrigado.html">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
           <div class="form-heading"><span>01</span><strong>Primeiro contacto</strong><small>Normalmente respondemos em 1 dia &uacute;til.</small></div>
           <label>Nome*<input type="text" id="nome" name="nome" autocomplete="name" required placeholder="O seu nome"></label>
           <label>Empresa<input type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Nome da empresa"></label>
