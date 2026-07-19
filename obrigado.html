@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260719-3">
+  <link rel="stylesheet" href="css/styles.css?v=20260719-4">
 </head>
 <body class="thanks-page">
   <header class="site-header">
@@ -29,7 +29,10 @@
         <span class="brand-word">Lumisland</span>
         <span class="brand-note">software de opera&ccedil;&atilde;o</span>
       </a>
-      <nav class="site-nav" aria-label="Navega&ccedil;&atilde;o principal">
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navega&ccedil;&atilde;o principal">
         <a href="/#solucoes">Solu&ccedil;&otilde;es</a>
         <a href="/#portfolio">Portf&oacute;lio</a>
         <a href="/#processo">Processo</a>
@@ -47,7 +50,9 @@
         <a class="button button-primary" href="/">Voltar ao site <span aria-hidden="true">↗</span></a>
         <a class="button button-quiet" href="mailto:contacto@lumisland.pt">Enviar e-mail direto</a>
       </div>
+      <p class="thanks-legal"><a href="privacidade.html">Privacidade</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a></p>
     </section>
   </main>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

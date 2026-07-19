@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 Disallow: /obrigado.html
+Disallow: /404.html
+Allow: /privacidade.html
+Allow: /cookies.html
+Allow: /aviso-legal.html
 
 Sitemap: https://lumisland.pt/sitemap.xml

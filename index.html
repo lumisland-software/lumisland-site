@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260719-3">
+  <link rel="stylesheet" href="css/styles.css?v=20260719-4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -285,6 +285,10 @@
           <label>Telefone<input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="+351 900 000 000"></label>
           <label class="form-full">O que pretende organizar?<select id="produto" name="produto"><option value="Ainda nao sei">Ainda n&atilde;o sei</option><option value="Gestao de oficinas">Gest&atilde;o de oficinas</option><option value="Portais e dashboards">Portais e dashboards</option><option value="Software personalizado">Software personalizado</option><option value="Presenca digital">Presen&ccedil;a digital</option><option value="Sistema inicial">Sistema inicial</option><option value="SaaS evolutivo">SaaS evolutivo</option></select></label>
           <label class="form-full">Mensagem<textarea id="mensagem" name="mensagem" rows="4" placeholder="Em que parte do trabalho perde mais tempo?"></textarea></label>
+          <label class="form-consent form-full">
+            <input type="checkbox" name="privacidade" value="Aceito a politica de privacidade" required>
+            <span>Li e aceito a <a href="privacidade.html" target="_blank" rel="noopener">Pol&iacute;tica de Privacidade</a>. Os dados ser&atilde;o usados para responder ao pedido e preparar uma proposta, quando aplic&aacute;vel.</span>
+          </label>
           <button class="button button-primary form-full" type="submit">Enviar pedido <span aria-hidden="true">↗</span></button>
           <p class="form-status form-full" id="form-status" role="status"></p>
         </form>
@@ -293,8 +297,8 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-top"><a href="#inicio" class="brand footer-brand" aria-label="Lumisland, p&aacute;gina inicial"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="43" width="39" height="9" rx="2" fill="#F0B35B"></rect><path d="M16 43h12V19l-6-9-6 9v24Z" fill="#42D5C4"></path><circle cx="22" cy="8" r="3" fill="#F0B35B"></circle><path d="M30 43h16l7 9H30v-9Z" fill="#E9EEF2"></path></svg><span class="brand-word">Lumisland</span></a><p>Software que acompanha o seu neg&oacute;cio.</p><div class="footer-links"><a href="#solucoes">Solu&ccedil;&otilde;es</a><a href="#portfolio">Portf&oacute;lio</a><a href="#processo">Processo</a><a href="#contacto">Contacto</a></div></div>
-    <div class="container footer-bottom"><span>&copy; 2026 Lumisland</span><span>Portugal</span><span>Site est&aacute;tico protegido por GitHub Pages e Cloudflare</span></div>
+    <div class="container footer-top"><a href="#inicio" class="brand footer-brand" aria-label="Lumisland, p&aacute;gina inicial"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="43" width="39" height="9" rx="2" fill="#F0B35B"></rect><path d="M16 43h12V19l-6-9-6 9v24Z" fill="#42D5C4"></path><circle cx="22" cy="8" r="3" fill="#F0B35B"></circle><path d="M30 43h16l7 9H30v-9Z" fill="#E9EEF2"></path></svg><span class="brand-word">Lumisland</span></a><p>Software que acompanha o seu neg&oacute;cio.</p><div class="footer-links"><a href="#solucoes">Solu&ccedil;&otilde;es</a><a href="#portfolio">Portf&oacute;lio</a><a href="#processo">Processo</a><a href="#contacto">Contacto</a><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a><a href="aviso-legal.html">Aviso legal</a></div></div>
+    <div class="container footer-bottom"><span>&copy; 2026 Lumisland</span><span>Portugal</span><span>HTTPS ativo. Site est&aacute;tico protegido por GitHub Pages e Cloudflare.</span></div>
   </footer>
 
   <script src="js/app.js" defer></script>

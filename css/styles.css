@@ -1580,6 +1580,29 @@ h1 span {
   font-size: 11px;
 }
 
+.form-consent {
+  grid-template-columns: 18px 1fr;
+  align-items: start;
+  gap: 10px;
+  padding: 4px 0 2px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.contact-form .form-consent input {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--teal);
+}
+
+.form-consent a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .site-footer {
   background: var(--ink-deep);
   color: var(--muted-light);
@@ -1661,6 +1684,94 @@ h1 span {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.thanks-legal {
+  margin-top: 28px;
+  margin-bottom: 0;
+  color: rgba(255, 254, 250, 0.58);
+  font-size: 12px;
+}
+
+.thanks-legal a {
+  color: var(--teal);
+}
+
+.legal-page {
+  background: var(--paper);
+}
+
+.legal-main {
+  padding: 148px 0 86px;
+}
+
+.legal-hero {
+  max-width: 840px;
+  margin-bottom: 34px;
+}
+
+.legal-hero h1 {
+  max-width: 760px;
+  margin-bottom: 18px;
+  color: var(--ink);
+  font-size: clamp(44px, 7vw, 84px);
+}
+
+.legal-hero > p:not(.eyebrow) {
+  max-width: 690px;
+  color: var(--ink-soft);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.legal-updated {
+  display: inline-block;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.legal-content {
+  max-width: 840px;
+  display: grid;
+  gap: 16px;
+}
+
+.legal-section {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.legal-section h2 {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 24px;
+}
+
+.legal-section p,
+.legal-section li {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.legal-section p + p {
+  margin-top: 12px;
+}
+
+.legal-section a {
+  color: var(--teal-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-list {
+  display: grid;
+  gap: 9px;
+  padding-left: 18px;
 }
 
 @media (max-width: 1040px) {
@@ -1957,6 +2068,10 @@ h1 span {
 
   .form-full {
     grid-column: auto;
+  }
+
+  .form-consent {
+    grid-template-columns: 18px 1fr;
   }
 
   .form-heading {
