@@ -29,7 +29,7 @@ function buildMailto(formData) {
     `Mensagem:\n${mensagem}`
   );
 
-  return `mailto:contato.lumisland@gmail.com?subject=${subject}&body=${body}`;
+  return `mailto:contacto@lumisland.pt?subject=${subject}&body=${body}`;
 }
 
 if (navToggle && siteNav) {
@@ -64,74 +64,4 @@ if (contactForm) {
 
     window.location.href = buildMailto(formData);
   });
-}
-
-const adminForm = document.getElementById("admin-form");
-
-if (adminForm) {
-  const fields = ["headline", "subheadline", "primaryCta", "email"];
-  const preview = document.getElementById("admin-preview");
-  const exportButton = document.getElementById("export-content");
-  const resetButton = document.getElementById("reset-content");
-  const storageKey = "lumisland-content";
-
-  function getAdminData() {
-    return fields.reduce((acc, field) => {
-      acc[field] = document.getElementById(field).value.trim();
-      return acc;
-    }, {});
-  }
-
-  function renderPreview(data) {
-    if (!preview) return;
-    preview.innerHTML = `
-      <p class="eyebrow">Pre-visualizacao</p>
-      <h2>${data.headline || "Titulo principal"}</h2>
-      <p>${data.subheadline || "Texto de apoio"}</p>
-      <p><strong>CTA:</strong> ${data.primaryCta || "Botao principal"}</p>
-      <p><strong>E-mail:</strong> ${data.email || "email@exemplo.com"}</p>
-    `;
-  }
-
-  function saveData() {
-    const data = getAdminData();
-    localStorage.setItem(storageKey, JSON.stringify(data, null, 2));
-    renderPreview(data);
-  }
-
-  const saved = localStorage.getItem(storageKey);
-  if (saved) {
-    try {
-      const data = JSON.parse(saved);
-      fields.forEach((field) => {
-        if (data[field]) document.getElementById(field).value = data[field];
-      });
-      renderPreview(data);
-    } catch {
-      localStorage.removeItem(storageKey);
-    }
-  } else {
-    renderPreview(getAdminData());
-  }
-
-  adminForm.addEventListener("input", saveData);
-
-  if (exportButton) {
-    exportButton.addEventListener("click", () => {
-      const blob = new Blob([JSON.stringify(getAdminData(), null, 2)], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "lumisland-content.json";
-      link.click();
-      URL.revokeObjectURL(url);
-    });
-  }
-
-  if (resetButton) {
-    resetButton.addEventListener("click", () => {
-      localStorage.removeItem(storageKey);
-      window.location.reload();
-    });
-  }
 }
