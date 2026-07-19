@@ -1774,6 +1774,69 @@ h1 span {
   padding-left: 18px;
 }
 
+.cookie-banner {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 60;
+  width: min(520px, calc(100% - 36px));
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  background: rgba(7, 17, 31, 0.96);
+  color: var(--white);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.32);
+}
+
+.cookie-banner strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: var(--display);
+  font-size: 17px;
+}
+
+.cookie-banner p {
+  color: rgba(255, 254, 250, 0.72);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.cookie-banner a {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.cookie-actions button {
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 13px;
+  font-weight: 800;
+}
+
+.cookie-primary {
+  background: var(--amber);
+  color: var(--ink);
+}
+
+.cookie-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
 @media (max-width: 1040px) {
   .site-nav {
     gap: 18px;
@@ -2095,5 +2158,13 @@ h1 span {
 
   .footer-bottom {
     flex-wrap: wrap;
+  }
+
+  .cookie-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .cookie-actions {
+    justify-content: flex-start;
   }
 }
