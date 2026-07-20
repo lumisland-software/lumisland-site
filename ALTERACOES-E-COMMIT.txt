@@ -1,0 +1,29 @@
+COMMIT SUGERIDO
+
+feat: amplia site da Lumisland para websites e soluções multissetoriais
+
+ALTERAÇÕES REALIZADAS
+
+- Remove o posicionamento centrado apenas em oficinas.
+- Reposiciona a Lumisland como empresa de websites, software, portais, dashboards e automações.
+- Cria quatro categorias claras de serviço:
+  1. Websites e lojas online
+  2. Sistemas de gestão
+  3. Portais e dashboards
+  4. Automação e integrações
+- Adiciona dez setores prioritários:
+  comércio, restauração, clínicas, oficinas, construção, imobiliário, turismo, transportes, serviços profissionais e bem-estar.
+- Adiciona quatro imagens de portfólio otimizadas em WebP.
+- Inclui um novo exemplo visual específico de website profissional.
+- Atualiza o formulário de contacto com as novas categorias.
+- Atualiza títulos, descrições SEO, Open Graph e dados estruturados.
+- Mantém o Google Ads ID AW-18334818619.
+- Altera o consentimento para carregar a medição do Google apenas depois da aceitação.
+- Mantém e atualiza as páginas de privacidade, cookies, aviso legal e agradecimento.
+- Mantém o site estático e responsivo para GitHub Pages e Cloudflare.
+
+COMANDOS PARA PUBLICAR
+
+git add .
+git commit -m "feat: amplia site da Lumisland para websites e soluções multissetoriais"
+git push

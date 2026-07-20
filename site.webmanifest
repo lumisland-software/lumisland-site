@@ -1,16 +1,9 @@
 {
   "name": "Lumisland",
   "short_name": "Lumisland",
-  "description": "Software simples para negocios que querem crescer.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#07111F",
-  "theme_color": "#07111F",
-  "icons": [
-    {
-      "src": "assets/icons/favicon.svg",
-      "sizes": "64x64",
-      "type": "image/svg+xml"
-    }
-  ]
+  "background_color": "#081220",
+  "theme_color": "#101827",
+  "icons": [{"src":"assets/icons/favicon.svg","sizes":"any","type":"image/svg+xml"}]
 }
