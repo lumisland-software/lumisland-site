@@ -1,9 +1,19 @@
 const GOOGLE_ADS_ID = 'AW-18334818619';
 const CONSENT_KEY = 'lumisland_cookie_consent';
+const LEAD_PENDING_KEY = 'lumisland_lead_pending';
+const LEAD_PRODUCT_KEY = 'lumisland_lead_product';
+const LEAD_RECORDED_KEY = 'lumisland_lead_recorded';
 
 window.dataLayer = window.dataLayer || [];
 function gtag() {
   window.dataLayer.push(arguments);
+}
+
+function trackEvent(eventName, parameters = {}) {
+  gtag('event', eventName, {
+    ...parameters,
+    transport_type: 'beacon',
+  });
 }
 
 gtag('consent', 'default', {
@@ -56,17 +66,83 @@ function buildConsentBanner() {
       const value = button.dataset.consent;
       localStorage.setItem(CONSENT_KEY, value);
       applyConsent(value);
+      if (value === 'accepted') trackConfirmedLead();
       banner.remove();
     });
   });
   document.body.appendChild(banner);
 }
 
+function trackContactFunnel() {
+  const form = document.getElementById('contact-form');
+
+  document.querySelectorAll('a[href="#contacto"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      trackEvent('contact_cta_click', {
+        content_name: link.dataset.product || link.textContent.trim().slice(0, 80),
+      });
+    });
+  });
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      trackEvent('contact_email_click', {
+        contact_method: 'email',
+        link_url: link.getAttribute('href'),
+      });
+    });
+  });
+
+  if (!form) return;
+
+  let formStarted = false;
+  form.addEventListener('input', () => {
+    if (formStarted) return;
+    formStarted = true;
+    trackEvent('form_start', { form_id: form.id });
+  }, { once: true });
+
+  form.addEventListener('submit', () => {
+    const product = document.getElementById('produto')?.value || 'Ainda não sei';
+    sessionStorage.setItem(LEAD_PENDING_KEY, 'true');
+    sessionStorage.setItem(LEAD_PRODUCT_KEY, product);
+    sessionStorage.removeItem(LEAD_RECORDED_KEY);
+    trackEvent('lead_form_submit', {
+      form_id: form.id,
+      product,
+    });
+  });
+}
+
+function trackConfirmedLead() {
+  if (!document.body.classList.contains('thanks-page')) return;
+  if (localStorage.getItem(CONSENT_KEY) !== 'accepted') return;
+  if (sessionStorage.getItem(LEAD_PENDING_KEY) !== 'true') return;
+  if (sessionStorage.getItem(LEAD_RECORDED_KEY) === 'true') return;
+
+  const product = sessionStorage.getItem(LEAD_PRODUCT_KEY) || 'Não indicado';
+  trackEvent('generate_lead', {
+    currency: 'EUR',
+    value: 1,
+    product,
+  });
+
+  sessionStorage.setItem(LEAD_RECORDED_KEY, 'true');
+  sessionStorage.removeItem(LEAD_PENDING_KEY);
+  sessionStorage.removeItem(LEAD_PRODUCT_KEY);
+}
+
 const savedConsent = localStorage.getItem(CONSENT_KEY);
 if (savedConsent) applyConsent(savedConsent);
 
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', buildConsentBanner);
+  document.addEventListener('DOMContentLoaded', () => {
+    buildConsentBanner();
+    trackContactFunnel();
+    trackConfirmedLead();
+  });
 } else {
   buildConsentBanner();
+  trackContactFunnel();
+  trackConfirmedLead();
 }
