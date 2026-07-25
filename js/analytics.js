@@ -1,4 +1,5 @@
 const GOOGLE_ADS_ID = 'AW-18334818619';
+const GOOGLE_ADS_LEAD_CONVERSION = 'AW-18334818619/c9M_CNCYwdYcELvC3KZE';
 const CONSENT_KEY = 'lumisland_cookie_consent';
 const LEAD_PENDING_KEY = 'lumisland_lead_pending';
 const LEAD_PRODUCT_KEY = 'lumisland_lead_product';
@@ -121,9 +122,10 @@ function trackConfirmedLead() {
   if (sessionStorage.getItem(LEAD_RECORDED_KEY) === 'true') return;
 
   const product = sessionStorage.getItem(LEAD_PRODUCT_KEY) || 'Não indicado';
+  trackEvent('conversion', {
+    send_to: GOOGLE_ADS_LEAD_CONVERSION,
+  });
   trackEvent('generate_lead', {
-    currency: 'EUR',
-    value: 1,
     product,
   });
 
