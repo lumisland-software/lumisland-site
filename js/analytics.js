@@ -55,7 +55,7 @@ function buildConsentBanner() {
     <div>
       <strong>Cookies e medição</strong>
       <p>Usamos Google Ads/Google Tag para medir contactos e melhorar campanhas. A medição só é carregada depois da sua aceitação.</p>
-      <a href="cookies.html">Saber mais</a>
+      <a href="/cookies.html">Saber mais</a>
     </div>
     <div class="cookie-actions">
       <button type="button" class="cookie-secondary" data-consent="rejected">Recusar</button>
