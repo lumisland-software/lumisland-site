@@ -171,11 +171,10 @@ h1 span { color: var(--teal); }
 
 .investment-section { background: var(--paper-strong); }
 .investment-list { border-top: 1px solid #bec9c5; }
-.investment-row { display: grid; grid-template-columns: 50px minmax(170px,.8fr) minmax(190px,1fr) 150px 22px; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid #bec9c5; transition: padding 160ms ease, color 160ms ease; }
+.investment-row { display: grid; grid-template-columns: 50px minmax(170px,.8fr) minmax(190px,1fr) 22px; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid #bec9c5; transition: padding 160ms ease, color 160ms ease; }
 .investment-row:hover, .investment-row:focus-visible { padding-right: 9px; padding-left: 9px; color: var(--teal-deep); }
-.investment-number, .investment-detail, .investment-price { color: var(--muted); font-size: 12px; }
+.investment-number, .investment-detail { color: var(--muted); font-size: 12px; }
 .investment-name { font-family: var(--display); font-size: 23px; font-weight: 600; letter-spacing: -.04em; }
-.investment-price { color: var(--ink); font-weight: 700; text-align: right; }
 .investment-arrow { color: var(--teal-deep); font-size: 20px; text-align: right; }
 
 .blog-section { padding-bottom: 130px; }
@@ -290,10 +289,9 @@ h1 span { color: var(--teal); }
   .showcase-body { display: block; }
   .showcase-body p { margin-top: 13px; }
   .contact-grid { grid-template-columns: 1fr; gap: 45px; }
-  .investment-row { grid-template-columns: 38px 1fr auto 20px; gap: 12px; }
+  .investment-row { grid-template-columns: 38px 1fr 20px; gap: 12px; }
   .investment-detail { grid-column: 2/3; }
-  .investment-price { grid-column: 3/4; grid-row: 1; }
-  .investment-arrow { grid-column: 4/5; grid-row: 1; }
+  .investment-arrow { grid-column: 3/4; grid-row: 1; }
   .footer-bottom { flex-direction: column; }
 }
 
@@ -324,8 +322,7 @@ h1 span { color: var(--teal); }
   .notes-grid { grid-template-columns: 1fr; }
   .investment-row { grid-template-columns: 30px 1fr 20px; }
   .investment-name { font-size: 20px; }
-  .investment-price { grid-column: 2/3; grid-row: 2; text-align: left; }
-  .investment-detail { grid-column: 2/3; grid-row: 3; }
+  .investment-detail { grid-column: 2/3; grid-row: 2; }
   .investment-arrow { grid-column: 3/4; grid-row: 1; }
   .contact-form { grid-template-columns: 1fr; padding: 20px; }
   .form-heading { grid-template-columns: 32px 1fr; }
