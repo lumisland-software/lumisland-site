@@ -1,68 +1,31 @@
-Copie e substitua todo o conteúdo do ficheiro atual por este:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Lumisland Oficina | Software de gestão para oficinas</title>
-
-  <meta
-    name="description"
-    content="Software de gestão para oficinas automóvel em Portugal. Ordens de serviço, clientes, veículos, agenda, stock, faturação, recibos, equipa e relatórios num único sistema."
-  >
-
+  <meta name="description" content="Software de gestão para oficinas automóvel em Portugal. Ordens de serviço, clientes, veículos, agenda, stock, documentos de faturação, pagamentos, recibos, equipa e relatórios num único sistema.">
   <meta name="theme-color" content="#081220">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-
-  <meta
-    http-equiv="Permissions-Policy"
-    content="camera=(), microphone=(), geolocation=(), payment=()"
-  >
-
-  <meta
-    http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google.com https://www.google.pt https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google.com https://www.google.pt https://www.googleadservices.com https://googleads.g.doubleclick.net; base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
-  >
-
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google.com https://www.google.pt https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google.com https://www.google.pt https://www.googleadservices.com https://googleads.g.doubleclick.net; base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
   <link rel="canonical" href="https://lumisland.pt/oficina/">
   <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
-
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_PT">
-  <meta
-    property="og:title"
-    content="Lumisland Oficina | Controle a oficina num único sistema"
-  >
-  <meta
-    property="og:description"
-    content="Ordens de serviço, clientes, veículos, agenda, stock, faturação, recibos, equipa e relatórios. Peça uma demonstração."
-  >
+  <meta property="og:title" content="Lumisland Oficina | Controle a oficina num único sistema">
+  <meta property="og:description" content="Ordens de serviço, clientes, veículos, agenda, stock, documentos de faturação, pagamentos, recibos, equipa e relatórios. Peça uma demonstração.">
   <meta property="og:url" content="https://lumisland.pt/oficina/">
   <meta property="og:site_name" content="Lumisland">
-  <meta
-    property="og:image"
-    content="https://lumisland.pt/assets/images/lumisland-workshop-hero.png"
-  >
-
+  <meta property="og:image" content="https://lumisland.pt/assets/images/lumisland-workshop-hero.png">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="../css/styles.css?v=20260727-1">
-  <link rel="stylesheet" href="../css/oficina.css?v=20260727-1">
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css?v=20260728-1">
+  <link rel="stylesheet" href="../css/oficina.css?v=20260728-1">
   <script src="../js/analytics.js" defer></script>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,7 +33,7 @@ Copie e substitua todo o conteúdo do ficheiro atual por este:
     "name": "Lumisland Oficina",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "description": "Software de gestão para oficinas automóvel com ordens de serviço, clientes, veículos, agenda, stock, faturação, recibos e relatórios.",
+    "description": "Software de gestão para oficinas automóvel com ordens de serviço, clientes, veículos, agenda, stock, documentos de faturação, pagamentos, recibos e relatórios.",
     "url": "https://lumisland.pt/oficina/",
     "offers": {
       "@type": "Offer",
@@ -86,916 +49,304 @@ Copie e substitua todo o conteúdo do ficheiro atual por este:
   }
   </script>
 </head>
-
 <body class="oficina-page">
-  <a class="skip-link" href="#conteudo">
-    Saltar para o conteúdo
-  </a>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a
-        href="../"
-        class="brand"
-        aria-label="Lumisland, página inicial"
-      >
-        <svg
-          class="brand-mark"
-          viewBox="0 0 64 64"
-          aria-hidden="true"
-        >
-          <rect
-            x="8"
-            y="43"
-            width="39"
-            height="9"
-            rx="2"
-            fill="#F0B35B"
-          ></rect>
-
-          <path
-            d="M16 43h12V19l-6-9-6 9v24Z"
-            fill="#42D5C4"
-          ></path>
-
-          <circle
-            cx="22"
-            cy="8"
-            r="3"
-            fill="#F0B35B"
-          ></circle>
-
-          <path
-            d="M30 43h16l7 9H30v-9Z"
-            fill="#E9EEF2"
-          ></path>
+      <a href="../" class="brand" aria-label="Lumisland, página inicial">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="8" y="43" width="39" height="9" rx="2" fill="#F0B35B"></rect>
+          <path d="M16 43h12V19l-6-9-6 9v24Z" fill="#42D5C4"></path>
+          <circle cx="22" cy="8" r="3" fill="#F0B35B"></circle>
+          <path d="M30 43h16l7 9H30v-9Z" fill="#E9EEF2"></path>
         </svg>
-
         <span class="brand-word">Lumisland</span>
         <span class="product-brand">Oficina</span>
       </a>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        aria-controls="site-nav"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
       </button>
 
-      <nav
-        id="site-nav"
-        class="site-nav"
-        aria-label="Navegação principal"
-      >
+      <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
         <a href="#recursos">Recursos</a>
         <a href="#funcionamento">Como funciona</a>
         <a href="#plano">Plano</a>
         <a href="#perguntas">Perguntas</a>
-
-        <a class="nav-cta" href="#contacto">
-          Pedir demonstração
-          <span aria-hidden="true">↗</span>
-        </a>
+        <a class="nav-cta" href="#contacto">Pedir demonstração <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="conteudo">
     <section class="workshop-hero">
-      <div
-        class="workshop-glow workshop-glow-one"
-        aria-hidden="true"
-      ></div>
-
-      <div
-        class="workshop-glow workshop-glow-two"
-        aria-hidden="true"
-      ></div>
-
+      <div class="workshop-glow workshop-glow-one" aria-hidden="true"></div>
+      <div class="workshop-glow workshop-glow-two" aria-hidden="true"></div>
       <div class="container workshop-hero-grid">
         <div class="workshop-hero-copy">
-          <p class="eyebrow eyebrow-light">
-            <span class="eyebrow-line"></span>
-            Software de gestão para oficinas automóvel
-          </p>
-
-          <h1>
-            Menos papéis.<br>
-            Mais controlo sobre
-            <span>cada serviço.</span>
-          </h1>
-
-          <p class="workshop-lead">
-            Acompanhe ordens de serviço, clientes, veículos, agenda,
-            stock, faturação e equipa num único sistema — da entrada
-            do veículo à emissão do recibo.
-          </p>
-
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Software de gestão para oficinas automóvel</p>
+          <h1>Menos papéis.<br>Mais controlo sobre <span>cada serviço.</span></h1>
+          <p class="workshop-lead">Acompanhe ordens de serviço, clientes, veículos, agenda, stock, documentos e equipa num único sistema — da entrada do veículo ao pagamento e recibo.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contacto">
-              Pedir demonstração
-              <span aria-hidden="true">↗</span>
-            </a>
-
-            <a class="button button-quiet" href="#recursos">
-              Ver o que inclui
-            </a>
+            <a class="button button-primary" href="#contacto">Pedir demonstração <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#recursos">Ver o que inclui</a>
           </div>
-
           <div class="workshop-price-note">
-            <strong>
-              Desde 50€
-              <small>/mês por oficina</small>
-            </strong>
-
-            <span>
-              Plano ajustado<br>
-              à dimensão e necessidades da operação
-            </span>
+            <strong>Desde 50€<small>/mês por oficina</small></strong>
+            <span>Plano ajustado<br>à dimensão e às necessidades da operação</span>
           </div>
-
-          <ul
-            class="hero-trust"
-            aria-label="Condições do produto"
-          >
+          <ul class="hero-trust" aria-label="Condições do produto">
             <li>Demonstração personalizada</li>
             <li>Configuração assistida</li>
             <li>Acesso online em computador e telemóvel</li>
           </ul>
         </div>
 
-        <div
-          class="product-preview"
-          role="img"
-          aria-label="Pré-visualização do dashboard Lumisland Oficina com ordens de serviço, agenda e faturação"
-        >
+        <div class="product-preview" role="img" aria-label="Pré-visualização do dashboard Lumisland Oficina com ordens de serviço, faturação, pagamentos e agenda">
           <div class="preview-browser">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
             <small>app.lumisland.pt</small>
           </div>
-
           <div class="preview-shell">
             <div class="preview-side">
               <div class="preview-logo">OF</div>
-              <i class="active"></i>
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
+              <i class="active"></i><i></i><i></i><i></i><i></i><i></i>
             </div>
-
             <div class="preview-main">
               <div class="preview-head">
-                <div>
-                  <small>Visão geral</small>
-                  <strong>Bom dia, Oficina Central</strong>
-                </div>
-
+                <div><small>Visão geral</small><strong>Bom dia, Oficina Central</strong></div>
                 <span>+ Nova OS</span>
               </div>
-
               <div class="preview-metrics">
-                <article>
-                  <small>OS em curso</small>
-                  <strong>12</strong>
-                  <em>3 aguardam aprovação</em>
-                </article>
-
-                <article>
-                  <small>Faturado este mês</small>
-                  <strong>18 420€</strong>
-                  <em>14 documentos emitidos</em>
-                </article>
-
-                <article>
-                  <small>Por receber</small>
-                  <strong>2 180€</strong>
-                  <em>5 pagamentos pendentes</em>
-                </article>
+                <article><small>OS em curso</small><strong>12</strong><em>3 aguardam aprovação</em></article>
+                <article><small>Faturado este mês</small><strong>18 420€</strong><em>14 documentos emitidos</em></article>
+                <article><small>Por receber</small><strong>2 180€</strong><em>5 pagamentos pendentes</em></article>
               </div>
-
               <div class="preview-content">
-                <section aria-label="Serviços e faturação">
-                  <div class="preview-title">
-                    <strong>Serviços e faturação</strong>
-                    <span>Ver todos</span>
-                  </div>
-
+                <section aria-label="Serviços e documentos">
+                  <div class="preview-title"><strong>Serviços e documentos</strong><span>Ver todos</span></div>
                   <div class="service-demo">
-                    <b>OS-1048</b>
-                    <span>RENAULT ZOE · 00-AA-00</span>
-                    <em class="status-blue">
-                      Em diagnóstico
-                    </em>
+                    <b>OS-1048</b><span>RENAULT ZOE · 00-AA-00</span><em class="status-blue">Em diagnóstico</em>
                   </div>
-
                   <div class="service-demo">
-                    <b>FT-2026/148</b>
-                    <span>PEUGEOT 208 · 11-BB-11</span>
-                    <em class="status-amber">
-                      A pagamento
-                    </em>
+                    <b>FT-2026/148</b><span>PEUGEOT 208 · 11-BB-11</span><em class="status-amber">A pagamento</em>
                   </div>
-
                   <div class="service-demo">
-                    <b>RC-2026/093</b>
-                    <span>TOYOTA YARIS · 22-CC-22</span>
-                    <em class="status-green">
-                      Recibo emitido
-                    </em>
+                    <b>RC-2026/093</b><span>TOYOTA YARIS · 22-CC-22</span><em class="status-green">Recibo emitido</em>
                   </div>
                 </section>
-
                 <aside aria-label="Agenda de hoje">
-                  <div class="preview-title">
-                    <strong>Hoje</strong>
-                    <span>27 jul.</span>
-                  </div>
-
-                  <div class="agenda-demo">
-                    <time>09:00</time>
-
-                    <span>
-                      Revisão completa
-                      <small>Renault Clio</small>
-                    </span>
-                  </div>
-
-                  <div class="agenda-demo">
-                    <time>11:30</time>
-
-                    <span>
-                      Diagnóstico
-                      <small>BMW Série 1</small>
-                    </span>
-                  </div>
-
-                  <div class="agenda-demo">
-                    <time>15:00</time>
-
-                    <span>
-                      Entrega e recibo
-                      <small>Peugeot 208</small>
-                    </span>
-                  </div>
+                  <div class="preview-title"><strong>Hoje</strong><span>26 jul.</span></div>
+                  <div class="agenda-demo"><time>09:00</time><span>Revisão completa<small>Renault Clio</small></span></div>
+                  <div class="agenda-demo"><time>11:30</time><span>Diagnóstico<small>BMW Série 1</small></span></div>
+                  <div class="agenda-demo"><time>15:00</time><span>Entrega e recibo<small>Peugeot 208</small></span></div>
                 </aside>
               </div>
             </div>
           </div>
-
-          <div class="preview-floating preview-floating-left">
-            <span>✓</span>
-
-            <div>
-              <strong>Histórico completo</strong>
-              <small>Cliente, veículo, OS e documentos</small>
-            </div>
-          </div>
-
-          <div class="preview-floating preview-floating-right">
-            <span>€</span>
-
-            <div>
-              <strong>Faturação integrada</strong>
-              <small>Faturas, notas e recibos</small>
-            </div>
-          </div>
+          <div class="preview-floating preview-floating-left"><span>✓</span><div><strong>Histórico completo</strong><small>Cliente, veículo, OS e documentos</small></div></div>
+          <div class="preview-floating preview-floating-right"><span>€</span><div><strong>Documentos e pagamentos</strong><small>Notas e recibos associados à OS</small></div></div>
         </div>
       </div>
     </section>
 
-    <section
-      class="workshop-signal"
-      aria-label="Fluxo coberto pelo sistema"
-    >
+    <section class="workshop-signal" aria-label="Fluxo coberto pelo sistema">
       <div class="container">
-        <span>Entrada do veículo</span>
-        <i>→</i>
-        <span>Diagnóstico</span>
-        <i>→</i>
-        <span>Orçamento</span>
-        <i>→</i>
-        <span>Execução</span>
-        <i>→</i>
-        <span>Fatura e recibo</span>
+        <span>Entrada do veículo</span><i>→</i><span>Diagnóstico</span><i>→</i><span>Orçamento</span><i>→</i><span>Execução</span><i>→</i><span>Pagamento e recibo</span>
       </div>
     </section>
 
     <section class="section workshop-problem">
       <div class="container problem-grid">
         <div>
-          <p class="eyebrow">
-            <span class="eyebrow-line"></span>
-            O problema
-          </p>
-
-          <h2>
-            A informação da oficina não pode ficar espalhada.
-          </h2>
+          <p class="eyebrow"><span class="eyebrow-line"></span> O problema</p>
+          <h2>A informação da oficina não pode ficar espalhada.</h2>
         </div>
-
         <div class="problem-list">
-          <article>
-            <span>01</span>
-
-            <div>
-              <h3>Ordens em papel</h3>
-
-              <p>
-                É difícil saber o que está parado, em execução
-                ou à espera do cliente.
-              </p>
-            </div>
-          </article>
-
-          <article>
-            <span>02</span>
-
-            <div>
-              <h3>Mensagens e folhas soltas</h3>
-
-              <p>
-                Histórico, orçamentos, peças, notas e documentos
-                de faturação ficam divididos entre várias ferramentas.
-              </p>
-            </div>
-          </article>
-
-          <article>
-            <span>03</span>
-
-            <div>
-              <h3>Stock sem controlo real</h3>
-
-              <p>
-                Compras, custos, margens e peças em falta só aparecem
-                quando já causam atraso.
-              </p>
-            </div>
-          </article>
+          <article><span>01</span><div><h3>Ordens em papel</h3><p>É difícil saber o que está parado, em execução ou à espera do cliente.</p></div></article>
+          <article><span>02</span><div><h3>Mensagens e folhas soltas</h3><p>Histórico, orçamentos, peças, notas e documentos de faturação ficam divididos entre várias ferramentas.</p></div></article>
+          <article><span>03</span><div><h3>Stock sem controlo real</h3><p>Compras, custos, margens e peças em falta só aparecem quando já causam atraso.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section
-      id="recursos"
-      class="section workshop-features"
-    >
+    <section id="recursos" class="section workshop-features">
       <div class="container">
         <div class="section-intro">
           <div>
-            <p class="eyebrow eyebrow-light">
-              <span class="eyebrow-line"></span>
-              Num único sistema
-            </p>
-
-            <h2>
-              O essencial para gerir a operação diária.
-            </h2>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Num único sistema</p>
+            <h2>O essencial para gerir a operação diária.</h2>
           </div>
-
-          <p>
-            O Lumisland Oficina foi criado para tornar o trabalho
-            visível e rastreável, sem obrigar a equipa a adaptar-se
-            a um sistema confuso.
-          </p>
+          <p>O Lumisland Oficina foi criado para tornar o trabalho visível e rastreável, sem obrigar a equipa a adaptar-se a um sistema confuso.</p>
         </div>
-
         <div class="workshop-feature-grid">
           <article class="workshop-feature feature-highlight">
             <span class="feature-number">01</span>
-
             <h3>Ordens de serviço</h3>
-
-            <p>
-              Registo do problema, diagnóstico, orçamento, serviços,
-              peças, estados e histórico até à entrega.
-            </p>
-
-            <div class="mini-flow">
-              <span>Recebido</span>
-              <i></i>
-              <span>Orçamento</span>
-              <i></i>
-              <span>Execução</span>
-            </div>
+            <p>Registo do problema, diagnóstico, orçamento, serviços, peças, estados e histórico até à entrega.</p>
+            <div class="mini-flow"><span>Recebido</span><i></i><span>Orçamento</span><i></i><span>Execução</span></div>
           </article>
-
           <article class="workshop-feature">
             <span class="feature-number">02</span>
-
             <h3>Clientes e veículos</h3>
-
-            <p>
-              Dados organizados, matrículas, histórico de intervenções
-              e contexto para atender melhor.
-            </p>
+            <p>Dados organizados, matrículas, histórico de intervenções e contexto para atender melhor.</p>
           </article>
-
           <article class="workshop-feature">
             <span class="feature-number">03</span>
-
             <h3>Agenda</h3>
-
-            <p>
-              Marcações e recursos num calendário compacto para planear
-              o dia e evitar conflitos.
-            </p>
+            <p>Marcações e recursos num calendário compacto para planear o dia e evitar conflitos.</p>
           </article>
-
           <article class="workshop-feature">
             <span class="feature-number">04</span>
-
             <h3>Stock e fornecedores</h3>
-
-            <p>
-              Entradas, custos médios, níveis mínimos, reposição,
-              fornecedores e valor do stock.
-            </p>
+            <p>Entradas, custos médios, níveis mínimos, reposição, fornecedores e valor do stock.</p>
           </article>
-
           <article class="workshop-feature">
             <span class="feature-number">05</span>
-
             <h3>Preçário e margens</h3>
-
-            <p>
-              Serviços e peças separados, preços de compra, impostos,
-              encargos, descontos e margens.
-            </p>
+            <p>Serviços e peças separados, preços de compra, impostos, encargos, descontos e margens.</p>
           </article>
-
           <article class="workshop-feature feature-highlight">
             <span class="feature-number">06</span>
-
-            <h3>Faturação, notas e recibos</h3>
-
-            <p>
-              Crie documentos a partir da ordem de serviço,
-              acompanhe pagamentos e emita recibos diretamente
-              no sistema.
-            </p>
-
-            <div class="mini-flow">
-              <span>Fatura</span>
-              <i></i>
-              <span>Pagamento</span>
-              <i></i>
-              <span>Recibo</span>
-            </div>
+            <h3>Documentos, pagamentos e recibos</h3>
+            <p>Gere documentos associados à ordem de serviço, registe pagamentos e emita o respetivo recibo diretamente no sistema.</p>
+            <div class="mini-flow"><span>Documento</span><i></i><span>Pagamento</span><i></i><span>Recibo</span></div>
           </article>
-
           <article class="workshop-feature">
             <span class="feature-number">07</span>
-
             <h3>Equipa e controlo</h3>
-
-            <p>
-              Utilizadores, permissões por ação, registo de atividades,
-              relatórios e indicadores.
-            </p>
+            <p>Utilizadores, permissões por ação, registo de atividades, relatórios e indicadores.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section
-      id="funcionamento"
-      class="section workshop-process"
-    >
+    <section id="funcionamento" class="section workshop-process">
       <div class="container">
         <div class="section-intro">
           <div>
-            <p class="eyebrow">
-              <span class="eyebrow-line"></span>
-              Funcionamento
-            </p>
-
-            <h2>
-              Comece acompanhado. Decida com o sistema à frente.
-            </h2>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Funcionamento</p>
+            <h2>Comece acompanhado. Decida com o sistema à frente.</h2>
           </div>
-
-          <p>
-            Não pedimos que compre com base numa promessa.
-            Primeiro mostramos o fluxo, entendemos a sua oficina
-            e confirmamos se o produto resolve o problema.
-          </p>
+          <p>Não pedimos que compre com base numa promessa. Primeiro mostramos o fluxo, entendemos a sua oficina e confirmamos se o produto resolve o problema.</p>
         </div>
-
         <div class="onboarding-grid">
-          <article>
-            <span>01</span>
-
-            <h3>Demonstração</h3>
-
-            <p>
-              Mostramos o sistema com foco na rotina real da sua
-              oficina e esclarecemos as limitações.
-            </p>
-          </article>
-
-          <article>
-            <span>02</span>
-
-            <h3>Configuração</h3>
-
-            <p>
-              Preparamos os dados base, utilizadores, permissões,
-              serviços e regras essenciais.
-            </p>
-          </article>
-
-          <article>
-            <span>03</span>
-
-            <h3>Entrada em operação</h3>
-
-            <p>
-              Acompanhamos os primeiros passos e corrigimos dúvidas
-              antes de expandir o uso.
-            </p>
-          </article>
+          <article><span>01</span><h3>Demonstração</h3><p>Mostramos o sistema com foco na rotina real da sua oficina e esclarecemos as limitações.</p></article>
+          <article><span>02</span><h3>Configuração</h3><p>Preparamos os dados base, utilizadores, permissões, serviços e regras essenciais.</p></article>
+          <article><span>03</span><h3>Entrada em operação</h3><p>Acompanhamos os primeiros passos e corrigimos dúvidas antes de expandir o uso.</p></article>
         </div>
       </div>
     </section>
 
-    <section
-      id="plano"
-      class="section founder-section"
-    >
+    <section id="plano" class="section founder-section">
       <div class="container founder-grid">
         <div class="founder-copy">
-          <p class="eyebrow eyebrow-light">
-            <span class="eyebrow-line"></span>
-            Planos Lumisland Oficina
-          </p>
-
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Planos Lumisland Oficina</p>
           <h2>Um preço simples para começar.</h2>
-
-          <p>
-            Planos adaptados ao tamanho da oficina, número de
-            utilizadores e necessidades operacionais.
-          </p>
-
-          <p class="founder-note">
-            Migração de dados, integrações externas e personalizações
-            são avaliadas separadamente antes de qualquer compromisso.
-          </p>
+          <p>Planos adaptados ao tamanho da oficina, número de utilizadores e necessidades operacionais.</p>
+          <p class="founder-note">Migração de dados, integrações externas e personalizações são avaliadas separadamente antes de qualquer compromisso.</p>
         </div>
-
         <article class="price-card">
           <span class="price-label">A partir de</span>
-
-          <div class="price">
-            <strong>50€</strong>
-            <span>/ mês</span>
-          </div>
-
+          <div class="price"><strong>50€</strong><span>/ mês</span></div>
           <ul>
             <li>Acesso ao sistema online</li>
             <li>Ordens de serviço, clientes e veículos</li>
             <li>Agenda, stock, fornecedores e preçário</li>
-            <li>Faturação, notas, pagamentos e recibos</li>
+            <li>Documentos, pagamentos e recibos</li>
             <li>Utilizadores, permissões e relatórios</li>
             <li>Configuração inicial assistida</li>
           </ul>
-
-          <a class="button button-primary" href="#contacto">
-            Pedir demonstração
-            <span aria-hidden="true">↗</span>
-          </a>
-
-          <small>
-            A demonstração não exige pagamento.
-          </small>
+          <a class="button button-primary" href="#contacto">Pedir demonstração <span aria-hidden="true">↗</span></a>
+          <small>A demonstração não exige pagamento.</small>
         </article>
       </div>
     </section>
 
-    <section
-      id="perguntas"
-      class="section faq-section"
-    >
+    <section id="perguntas" class="section faq-section">
       <div class="container faq-grid">
         <div>
-          <p class="eyebrow">
-            <span class="eyebrow-line"></span>
-            Perguntas frequentes
-          </p>
-
-          <h2>
-            Antes de mudar a rotina, tire as dúvidas.
-          </h2>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Perguntas frequentes</p>
+          <h2>Antes de mudar a rotina, tire as dúvidas.</h2>
         </div>
-
         <div class="faq-list">
           <details>
             <summary>Preciso instalar alguma coisa?</summary>
-
-            <p>
-              Não. O sistema funciona online através do navegador
-              e adapta-se a computador, tablet e telemóvel.
-            </p>
+            <p>Não. O sistema funciona online através do navegador e adapta-se a computador, tablet e telemóvel.</p>
           </details>
-
           <details>
             <summary>Posso testar sozinho agora?</summary>
-
-            <p>
-              Ainda não oferecemos criação automática de conta.
-              Nesta fase, fazemos uma demonstração e acompanhamos
-              a configuração dos primeiros clientes.
-            </p>
+            <p>Ainda não oferecemos criação automática de conta. Nesta fase, fazemos uma demonstração e acompanhamos a configuração dos primeiros clientes.</p>
           </details>
-
           <details>
             <summary>O plano inclui personalizações?</summary>
-
-            <p>
-              O plano inclui o produto existente e a configuração base.
-              Funcionalidades exclusivas, migrações e integrações são
-              analisadas e orçamentadas separadamente.
-            </p>
+            <p>O plano inclui o produto existente e a configuração base. Funcionalidades exclusivas, migrações e integrações são analisadas e orçamentadas separadamente.</p>
           </details>
-
           <details>
             <summary>Consigo controlar o acesso da equipa?</summary>
-
-            <p>
-              Sim. O sistema inclui utilizadores e permissões para
-              limitar ações de acordo com a função de cada pessoa.
-            </p>
+            <p>Sim. O sistema inclui utilizadores e permissões para limitar ações de acordo com a função de cada pessoa.</p>
           </details>
-
           <details>
-            <summary>Consigo emitir faturas, notas e recibos?</summary>
-
-            <p>
-              Sim. O módulo permite criar documentos associados
-              à ordem de serviço, acompanhar o pagamento e emitir
-              o respetivo recibo diretamente no sistema.
-            </p>
+            <summary>Consigo criar documentos, registar pagamentos e emitir recibos?</summary>
+            <p>Sim. O módulo associa os documentos à ordem de serviço, permite acompanhar o pagamento e emitir o respetivo recibo diretamente no sistema.</p>
           </details>
-
           <details>
-            <summary>
-              O sistema substitui um programa de faturação certificado?
-            </summary>
-
-            <p>
-              A utilização fiscal depende da configuração e dos
-              requisitos legais aplicáveis à sua oficina. Na demonstração
-              confirmamos o enquadramento e as integrações necessárias
-              antes da entrada em produção.
-            </p>
+            <summary>O sistema substitui um programa de faturação certificado?</summary>
+            <p>A utilização fiscal depende da configuração do sistema e dos requisitos legais aplicáveis à oficina. Na demonstração confirmamos o enquadramento e as integrações necessárias antes da entrada em produção.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section
-      id="contacto"
-      class="contact-section workshop-contact"
-    >
+    <section id="contacto" class="contact-section workshop-contact">
       <div class="container contact-grid">
         <div class="contact-copy">
-          <p class="eyebrow eyebrow-light">
-            <span class="eyebrow-line"></span>
-            Demonstração
-          </p>
-
-          <h2>
-            Veja se funciona para a sua oficina.
-          </h2>
-
-          <p>
-            Preencha o formulário. Entramos em contacto para conhecer
-            a operação, mostrar o sistema e definir o próximo passo.
-          </p>
-
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Demonstração</p>
+          <h2>Veja se funciona para a sua oficina.</h2>
+          <p>Preencha o formulário. Entramos em contacto para conhecer a operação, mostrar o sistema e definir o próximo passo.</p>
           <div class="demo-steps">
-            <span>
-              <b>1</b>
-              Recebemos o pedido
-            </span>
-
-            <span>
-              <b>2</b>
-              Marcamos a demonstração
-            </span>
-
-            <span>
-              <b>3</b>
-              Decide depois de ver
-            </span>
+            <span><b>1</b> Recebemos o pedido</span>
+            <span><b>2</b> Marcamos a demonstração</span>
+            <span><b>3</b> Decide depois de ver</span>
           </div>
-
-          <div class="contact-email">
-            <span>Prefere e-mail?</span>
-
-            <a href="mailto:contacto@lumisland.pt">
-              contacto@lumisland.pt
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+          <div class="contact-email"><span>Prefere e-mail?</span><a href="mailto:contacto@lumisland.pt">contacto@lumisland.pt <span aria-hidden="true">↗</span></a></div>
         </div>
 
-        <form
-          class="contact-form"
-          id="contact-form"
-          action="https://formsubmit.co/contacto@lumisland.pt"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="Pedido de demonstração | Lumisland Oficina"
-          >
-
-          <input
-            type="hidden"
-            name="_next"
-            value="https://lumisland.pt/obrigado.html"
-          >
-
-          <input
-            type="hidden"
-            name="_template"
-            value="table"
-          >
-
-          <input
-            type="hidden"
-            id="produto"
-            name="produto"
-            value="Lumisland Oficina"
-          >
-
-          <input
-            type="text"
-            name="_honey"
-            class="hidden-field"
-            tabindex="-1"
-            autocomplete="off"
-          >
-
-          <div class="form-heading">
-            <span>01</span>
-            <strong>Pedir demonstração</strong>
-            <small>Normalmente respondemos em 1 dia útil.</small>
-          </div>
-
-          <label>
-            Nome*
-
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              autocomplete="name"
-              required
-              placeholder="O seu nome"
-            >
-          </label>
-
-          <label>
-            Oficina*
-
-            <input
-              type="text"
-              id="empresa"
-              name="oficina"
-              autocomplete="organization"
-              required
-              placeholder="Nome da oficina"
-            >
-          </label>
-
-          <label>
-            E-mail*
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-              placeholder="nome@oficina.pt"
-            >
-          </label>
-
-          <label>
-            Telefone*
-
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              autocomplete="tel"
-              required
-              placeholder="+351 900 000 000"
-            >
-          </label>
-
-          <label>
-            Como gere a oficina hoje?
-
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/contacto@lumisland.pt" method="POST">
+          <input type="hidden" name="_subject" value="Pedido de demonstração | Lumisland Oficina">
+          <input type="hidden" name="_next" value="https://lumisland.pt/obrigado.html">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" id="produto" name="produto" value="Lumisland Oficina">
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+          <div class="form-heading"><span>01</span><strong>Pedir demonstração</strong><small>Normalmente respondemos em 1 dia útil.</small></div>
+          <label>Nome*<input type="text" id="nome" name="nome" autocomplete="name" required placeholder="O seu nome"></label>
+          <label>Oficina*<input type="text" id="empresa" name="oficina" autocomplete="organization" required placeholder="Nome da oficina"></label>
+          <label>E-mail*<input type="email" id="email" name="email" autocomplete="email" required placeholder="nome@oficina.pt"></label>
+          <label>Telefone*<input type="tel" id="telefone" name="telefone" autocomplete="tel" required placeholder="+351 900 000 000"></label>
+          <label>Como gere a oficina hoje?
             <select name="gestao_atual">
-              <option value="Papel e mensagens">
-                Papel e mensagens
-              </option>
-
-              <option value="Folhas de cálculo">
-                Folhas de cálculo
-              </option>
-
-              <option value="Outro software">
-                Outro software
-              </option>
-
-              <option value="Estou a começar">
-                Estou a começar
-              </option>
+              <option value="Papel e mensagens">Papel e mensagens</option>
+              <option value="Folhas de cálculo">Folhas de cálculo</option>
+              <option value="Outro software">Outro software</option>
+              <option value="Estou a começar">Estou a começar</option>
             </select>
           </label>
-
-          <label>
-            Veículos atendidos por mês
-
+          <label>Veículos atendidos por mês
             <select name="volume_mensal">
-              <option value="Até 30">
-                Até 30
-              </option>
-
-              <option value="31 a 80">
-                31 a 80
-              </option>
-
-              <option value="81 a 150">
-                81 a 150
-              </option>
-
-              <option value="Mais de 150">
-                Mais de 150
-              </option>
+              <option value="Até 30">Até 30</option>
+              <option value="31 a 80">31 a 80</option>
+              <option value="81 a 150">81 a 150</option>
+              <option value="Mais de 150">Mais de 150</option>
             </select>
           </label>
-
-          <label class="form-full">
-            Principal dificuldade
-
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="4"
-              placeholder="O que mais precisa de organizar ou controlar na oficina?"
-            ></textarea>
-          </label>
-
+          <label class="form-full">Principal dificuldade<textarea id="mensagem" name="mensagem" rows="4" placeholder="O que mais precisa de organizar ou controlar na oficina?"></textarea></label>
           <label class="form-consent form-full">
-            <input
-              type="checkbox"
-              name="privacidade"
-              value="Aceito a política de privacidade"
-              required
-            >
-
-            <span>
-              Li e aceito a
-              <a
-                href="../privacidade.html"
-                target="_blank"
-                rel="noopener"
-              >
-                Política de Privacidade
-              </a>.
-              Os dados serão usados para responder ao pedido
-              e preparar a demonstração.
-            </span>
+            <input type="checkbox" name="privacidade" value="Aceito a política de privacidade" required>
+            <span>Li e aceito a <a href="../privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>. Os dados serão usados para responder ao pedido e preparar a demonstração.</span>
           </label>
-
-          <button
-            class="button button-primary form-full"
-            type="submit"
-          >
-            Pedir demonstração
-            <span aria-hidden="true">↗</span>
-          </button>
-
-          <p
-            class="form-status form-full"
-            id="form-status"
-            role="status"
-          ></p>
+          <button class="button button-primary form-full" type="submit">Pedir demonstração <span aria-hidden="true">↗</span></button>
+          <p class="form-status form-full" id="form-status" role="status"></p>
         </form>
       </div>
     </section>
@@ -1003,73 +354,16 @@ Copie e substitua todo o conteúdo do ficheiro atual por este:
 
   <footer class="site-footer">
     <div class="container footer-top">
-      <a
-        href="../"
-        class="brand footer-brand"
-        aria-label="Lumisland, página inicial"
-      >
-        <svg
-          class="brand-mark"
-          viewBox="0 0 64 64"
-          aria-hidden="true"
-        >
-          <rect
-            x="8"
-            y="43"
-            width="39"
-            height="9"
-            rx="2"
-            fill="#F0B35B"
-          ></rect>
-
-          <path
-            d="M16 43h12V19l-6-9-6 9v24Z"
-            fill="#42D5C4"
-          ></path>
-
-          <circle
-            cx="22"
-            cy="8"
-            r="3"
-            fill="#F0B35B"
-          ></circle>
-
-          <path
-            d="M30 43h16l7 9H30v-9Z"
-            fill="#E9EEF2"
-          ></path>
-        </svg>
-
+      <a href="../" class="brand footer-brand" aria-label="Lumisland, página inicial">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="43" width="39" height="9" rx="2" fill="#F0B35B"></rect><path d="M16 43h12V19l-6-9-6 9v24Z" fill="#42D5C4"></path><circle cx="22" cy="8" r="3" fill="#F0B35B"></circle><path d="M30 43h16l7 9H30v-9Z" fill="#E9EEF2"></path></svg>
         <span class="brand-word">Lumisland</span>
       </a>
-
-      <p>
-        Software e soluções digitais para empresas.
-      </p>
-
-      <div class="footer-links">
-        <a href="../">Lumisland</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#plano">Plano</a>
-        <a href="#contacto">Demonstração</a>
-        <a href="../privacidade.html">Privacidade</a>
-        <a href="../cookies.html">Cookies</a>
-        <a href="../aviso-legal.html">Aviso legal</a>
-      </div>
+      <p>Software e soluções digitais para empresas.</p>
+      <div class="footer-links"><a href="../">Lumisland</a><a href="#recursos">Recursos</a><a href="#plano">Plano</a><a href="#contacto">Demonstração</a><a href="../privacidade.html">Privacidade</a><a href="../cookies.html">Cookies</a><a href="../aviso-legal.html">Aviso legal</a></div>
     </div>
-
-    <div class="container footer-bottom">
-      <span>&copy; 2026 Lumisland</span>
-      <span>Portugal</span>
-      <span>
-        Lumisland Oficina — gestão operacional para oficinas.
-      </span>
-    </div>
+    <div class="container footer-bottom"><span>&copy; 2026 Lumisland</span><span>Portugal</span><span>Lumisland Oficina — gestão operacional para oficinas.</span></div>
   </footer>
 
   <script src="../js/app.js" defer></script>
 </body>
 </html>
-```
-
-Atenção ao ponto fiscal: o site afirma que o sistema emite faturas, notas e recibos. Só mantenha essa afirmação caso essas funções estejam realmente disponíveis e testadas.
