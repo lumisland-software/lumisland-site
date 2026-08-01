@@ -1,5 +1,6 @@
 const GOOGLE_ADS_ID = 'AW-18334818619';
 const GOOGLE_ADS_LEAD_CONVERSION = 'AW-18334818619/c9M_CNCYwdYcELvC3KZE';
+const META_PIXEL_ID = '1837189070989213';
 const CONSENT_KEY = 'lumisland_cookie_consent';
 const LEAD_PENDING_KEY = 'lumisland_lead_pending';
 const LEAD_PRODUCT_KEY = 'lumisland_lead_product';
@@ -15,6 +16,11 @@ function trackEvent(eventName, parameters = {}) {
     ...parameters,
     transport_type: 'beacon',
   });
+}
+
+function trackMetaEvent(eventName, parameters = {}) {
+  if (typeof window.fbq !== 'function') return;
+  window.fbq('track', eventName, parameters);
 }
 
 gtag('consent', 'default', {
@@ -35,6 +41,30 @@ function loadGoogleTag() {
   gtag('config', GOOGLE_ADS_ID);
 }
 
+function loadMetaPixel() {
+  if (document.querySelector('script[data-meta-pixel]')) return;
+
+  window.fbq = window.fbq || function fbq() {
+    window.fbq.callMethod
+      ? window.fbq.callMethod.apply(window.fbq, arguments)
+      : window.fbq.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = window.fbq;
+  window.fbq.push = window.fbq;
+  window.fbq.loaded = true;
+  window.fbq.version = '2.0';
+  window.fbq.queue = [];
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.dataset.metaPixel = META_PIXEL_ID;
+  script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+  document.head.appendChild(script);
+
+  window.fbq('init', META_PIXEL_ID);
+  window.fbq('track', 'PageView');
+}
+
 function applyConsent(value) {
   const granted = value === 'accepted' ? 'granted' : 'denied';
   gtag('consent', 'update', {
@@ -43,7 +73,10 @@ function applyConsent(value) {
     ad_personalization: granted,
     analytics_storage: granted,
   });
-  if (value === 'accepted') loadGoogleTag();
+  if (value === 'accepted') {
+    loadGoogleTag();
+    loadMetaPixel();
+  }
 }
 
 function buildConsentBanner() {
@@ -54,7 +87,7 @@ function buildConsentBanner() {
   banner.innerHTML = `
     <div>
       <strong>Cookies e medição</strong>
-      <p>Usamos Google Ads/Google Tag para medir contactos e melhorar campanhas. A medição só é carregada depois da sua aceitação.</p>
+      <p>Usamos Google Ads e Meta Pixel para medir contactos e melhorar campanhas. A medição só é carregada depois da sua aceitação.</p>
       <a href="/cookies.html">Saber mais</a>
     </div>
     <div class="cookie-actions">
@@ -82,6 +115,16 @@ function trackContactFunnel() {
       trackEvent('contact_cta_click', {
         content_name: link.dataset.product || link.textContent.trim().slice(0, 80),
       });
+    });
+  });
+
+  document.querySelectorAll('a[href*="wa.me/"], a[href*="whatsapp.com/"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      trackEvent('contact_whatsapp_click', {
+        contact_method: 'whatsapp',
+        link_url: link.getAttribute('href'),
+      });
+      trackMetaEvent('Contact', { content_name: 'WhatsApp' });
     });
   });
 
@@ -127,6 +170,9 @@ function trackConfirmedLead() {
   });
   trackEvent('generate_lead', {
     product,
+  });
+  trackMetaEvent('Lead', {
+    content_name: product,
   });
 
   sessionStorage.setItem(LEAD_RECORDED_KEY, 'true');
