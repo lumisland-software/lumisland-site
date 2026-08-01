@@ -20,9 +20,26 @@ if (navToggle && siteNav) {
     link.addEventListener('click', () => {
       siteNav.classList.remove('is-open');
       navToggle.setAttribute('aria-expanded', 'false');
+      siteNav.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
+        dropdown.removeAttribute('open');
+      });
     });
   });
 }
+
+document.addEventListener('click', (event) => {
+  document.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
+    if (!dropdown.contains(event.target)) dropdown.removeAttribute('open');
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  document.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
+    dropdown.removeAttribute('open');
+    dropdown.querySelector('summary')?.focus();
+  });
+});
 
 productLinks.forEach((link) => {
   link.addEventListener('click', () => setSelectedProduct(link.dataset.product));

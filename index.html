@@ -248,8 +248,13 @@
         class="site-nav"
         aria-label="Navegação principal"
       >
-        <a href="criacao-de-sites/">Websites</a>
-        <a href="#solucoes">Soluções</a>
+        <details class="nav-dropdown">
+          <summary>Soluções <span aria-hidden="true">⌄</span></summary>
+          <div class="nav-dropdown-menu">
+            <a href="oficina/"><strong>Oficinas mecânicas</strong><small>Software de gestão para oficinas</small></a>
+            <a href="criacao-de-sites/"><strong>Criação de websites</strong><small>Websites profissionais para empresas</small></a>
+          </div>
+        </details>
         <a href="#setores">Setores</a>
         <a href="#portfolio">Portfólio</a>
         <a href="#processo">Processo</a>
@@ -1314,6 +1319,6 @@
     </span>
   </a>
 
-  <script src="js/app.js" defer></script>
+  <script src="js/app.js?v=20260801-2" defer></script>
 </body>
 </html>
