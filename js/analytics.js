@@ -6,6 +6,57 @@ const LEAD_PENDING_KEY = 'lumisland_lead_pending';
 const LEAD_PRODUCT_KEY = 'lumisland_lead_product';
 const LEAD_RECORDED_KEY = 'lumisland_lead_recorded';
 
+const CONSENT_COPY = {
+  pt: {
+    label: 'Preferências de cookies',
+    title: 'Cookies e medição',
+    description: 'Usamos Google Ads e Meta Pixel para medir contactos e melhorar campanhas. A medição só é carregada depois da sua aceitação.',
+    learnMore: 'Saber mais',
+    reject: 'Recusar',
+    accept: 'Aceitar',
+  },
+  en: {
+    label: 'Cookie preferences',
+    title: 'Cookies and measurement',
+    description: 'We use Google Ads and Meta Pixel to measure enquiries and improve campaigns. Measurement only loads after you give consent.',
+    learnMore: 'Learn more',
+    reject: 'Reject',
+    accept: 'Accept',
+  },
+  es: {
+    label: 'Preferencias de cookies',
+    title: 'Cookies y medición',
+    description: 'Utilizamos Google Ads y Meta Pixel para medir contactos y mejorar las campañas. La medición solo se carga después de que dé su consentimiento.',
+    learnMore: 'Más información',
+    reject: 'Rechazar',
+    accept: 'Aceptar',
+  },
+  fr: {
+    label: 'Préférences relatives aux cookies',
+    title: 'Cookies et mesure',
+    description: 'Nous utilisons Google Ads et Meta Pixel pour mesurer les demandes et améliorer les campagnes. La mesure ne se charge qu’après votre consentement.',
+    learnMore: 'En savoir plus',
+    reject: 'Refuser',
+    accept: 'Accepter',
+  },
+  de: {
+    label: 'Cookie-Einstellungen',
+    title: 'Cookies und Erfolgsmessung',
+    description: 'Wir verwenden Google Ads und Meta Pixel, um Anfragen zu messen und Kampagnen zu verbessern. Die Messung wird erst nach Ihrer Einwilligung geladen.',
+    learnMore: 'Mehr erfahren',
+    reject: 'Ablehnen',
+    accept: 'Akzeptieren',
+  },
+  it: {
+    label: 'Preferenze sui cookie',
+    title: 'Cookie e misurazione',
+    description: 'Utilizziamo Google Ads e Meta Pixel per misurare i contatti e migliorare le campagne. La misurazione viene caricata solo dopo il consenso.',
+    learnMore: 'Scopri di più',
+    reject: 'Rifiuta',
+    accept: 'Accetta',
+  },
+};
+
 window.dataLayer = window.dataLayer || [];
 function gtag() {
   window.dataLayer.push(arguments);
@@ -79,21 +130,39 @@ function applyConsent(value) {
   }
 }
 
+function consentLocale() {
+  const pageLocale = document.documentElement.lang?.toLowerCase().split('-')[0];
+  return CONSENT_COPY[pageLocale] ? pageLocale : 'pt';
+}
+
+function updateConsentBannerCopy(banner) {
+  const copy = CONSENT_COPY[consentLocale()];
+  banner.setAttribute('aria-label', copy.label);
+  banner.querySelector('[data-consent-title]').textContent = copy.title;
+  banner.querySelector('[data-consent-description]').textContent = copy.description;
+  banner.querySelector('[data-consent-learn-more]').textContent = copy.learnMore;
+  banner.querySelector('[data-consent="rejected"]').textContent = copy.reject;
+  banner.querySelector('[data-consent="accepted"]').textContent = copy.accept;
+}
+
 function buildConsentBanner() {
   if (localStorage.getItem(CONSENT_KEY)) return;
   const banner = document.createElement('section');
   banner.className = 'cookie-banner';
-  banner.setAttribute('aria-label', 'Preferências de cookies');
   banner.innerHTML = `
     <div>
-      <strong>Cookies e medição</strong>
-      <p>Usamos Google Ads e Meta Pixel para medir contactos e melhorar campanhas. A medição só é carregada depois da sua aceitação.</p>
-      <a href="/cookies.html">Saber mais</a>
+      <strong data-consent-title></strong>
+      <p data-consent-description></p>
+      <a href="/cookies.html" data-consent-learn-more></a>
     </div>
     <div class="cookie-actions">
-      <button type="button" class="cookie-secondary" data-consent="rejected">Recusar</button>
-      <button type="button" class="cookie-primary" data-consent="accepted">Aceitar</button>
+      <button type="button" class="cookie-secondary" data-consent="rejected"></button>
+      <button type="button" class="cookie-primary" data-consent="accepted"></button>
     </div>`;
+
+  updateConsentBannerCopy(banner);
+  const localeObserver = new MutationObserver(() => updateConsentBannerCopy(banner));
+  localeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 
   banner.querySelectorAll('[data-consent]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -101,6 +170,7 @@ function buildConsentBanner() {
       localStorage.setItem(CONSENT_KEY, value);
       applyConsent(value);
       if (value === 'accepted') trackConfirmedLead();
+      localeObserver.disconnect();
       banner.remove();
     });
   });
