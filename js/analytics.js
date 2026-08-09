@@ -110,6 +110,15 @@ function buildConsentBanner() {
 function trackContactFunnel() {
   const form = document.getElementById('contact-form');
 
+  document.querySelectorAll('a[data-product]').forEach((link) => {
+    link.addEventListener('click', () => {
+      trackEvent('product_cta_click', {
+        content_name: link.dataset.product.slice(0, 80),
+        destination_host: new URL(link.href, window.location.href).host,
+      });
+    });
+  });
+
   document.querySelectorAll('a[href="#contacto"]').forEach((link) => {
     link.addEventListener('click', () => {
       trackEvent('contact_cta_click', {
