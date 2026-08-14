@@ -18,6 +18,24 @@
   --body: "DM Sans", Arial, sans-serif;
 }
 
+/* Shared motion language across every Lumisland page. */
+.site-header { transition: background-color 280ms ease, box-shadow 280ms ease, backdrop-filter 280ms ease; }
+.site-header.is-scrolled { background: rgba(8,18,32,.9); box-shadow: 0 12px 35px rgba(0,0,0,.16); backdrop-filter: blur(16px); }
+.button, .nav-cta, .card-link { transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease; }
+.button:hover, .nav-cta:hover { transform: translateY(-2px); }
+.service-card, .workshop-feature, .feature-grid article, .sector-grid article, .resource-grid article, .price-card, .plan-card { transition: transform 320ms cubic-bezier(.2,.75,.2,1), box-shadow 320ms ease, border-color 320ms ease; }
+.service-card:hover, .workshop-feature:hover, .feature-grid article:hover, .sector-grid article:hover, .resource-grid article:hover { z-index: 1; transform: translateY(-6px); box-shadow: 0 24px 55px rgba(8,18,32,.12); }
+.motion-ready [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 700ms cubic-bezier(.2,.75,.2,1), transform 700ms cubic-bezier(.2,.75,.2,1); transition-delay: var(--reveal-delay,0ms); }
+.motion-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+[data-tilt] { --tilt-x: 0deg; --tilt-y: 0deg; transform: perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)); transition: transform 220ms ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .motion-ready [data-reveal] { opacity: 1; transform: none; }
+  [data-tilt] { transform: none; }
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 92px; }
 body { background: var(--paper); color: var(--ink); font-family: var(--body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
