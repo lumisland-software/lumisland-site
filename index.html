@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-PT" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lumisland | Websites, software e automação</title>
+  <title>Lumisland | Web design & desenvolvimento full stack</title>
 
   <meta
     name="description"
     content="A Lumisland cria websites, lojas online, sistemas de gestão, portais, dashboards e automações para empresas em Portugal."
   >
 
-  <meta name="theme-color" content="#0b1627">
+  <meta name="theme-color" content="#f5f7fb">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -33,7 +33,7 @@
   <meta property="og:locale" content="pt_PT">
   <meta
     property="og:title"
-    content="Lumisland | Websites, software e automação"
+    content="Lumisland | Web design & desenvolvimento full stack"
   >
   <meta
     property="og:description"
@@ -52,11 +52,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="css/styles.css?v=20260814-2">
+  <link rel="stylesheet" href="css/styles.css?v=20260923-2">
 
   <script src="js/analytics.js" defer></script>
 
@@ -74,1010 +74,91 @@
     ]
   }
   </script>
-
-  <style>
-    /* Botão flutuante do WhatsApp */
-    .whatsapp-floating {
-      position: fixed;
-      right: 24px;
-      bottom: 24px;
-      z-index: 9999;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-
-      min-height: 58px;
-      padding: 0 20px 0 16px;
-
-      color: #ffffff;
-      background-color: #25d366;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: 999px;
-
-      font-family: "DM Sans", sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 1;
-      text-decoration: none;
-
-      box-shadow:
-        0 14px 34px rgba(0, 0, 0, 0.26),
-        0 6px 18px rgba(37, 211, 102, 0.25);
-
-      transition:
-        transform 180ms ease,
-        background-color 180ms ease,
-        box-shadow 180ms ease;
-    }
-
-    .whatsapp-floating svg {
-      width: 30px;
-      height: 30px;
-      flex: 0 0 auto;
-    }
-
-    .whatsapp-floating:hover {
-      color: #ffffff;
-      background-color: #20bd5a;
-      transform: translateY(-3px);
-
-      box-shadow:
-        0 18px 42px rgba(0, 0, 0, 0.3),
-        0 8px 22px rgba(37, 211, 102, 0.32);
-    }
-
-    .whatsapp-floating:active {
-      transform: translateY(-1px) scale(0.98);
-    }
-
-    .whatsapp-floating:focus-visible {
-      outline: 3px solid rgba(37, 211, 102, 0.42);
-      outline-offset: 4px;
-    }
-
-    .whatsapp-floating-text {
-      white-space: nowrap;
-    }
-
-    @media (max-width: 640px) {
-      .whatsapp-floating {
-        right: 16px;
-        bottom: 16px;
-
-        width: 58px;
-        height: 58px;
-        min-height: 58px;
-        padding: 0;
-      }
-
-      .whatsapp-floating-text {
-        position: absolute;
-
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-
-        overflow: hidden;
-        white-space: nowrap;
-
-        clip: rect(0, 0, 0, 0);
-        clip-path: inset(50%);
-
-        border: 0;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .whatsapp-floating {
-        transition: none;
-      }
-
-      .whatsapp-floating:hover,
-      .whatsapp-floating:active {
-        transform: none;
-      }
-    }
-  </style>
+<link rel="stylesheet" href="css/premium.css?v=20260923-2">
 </head>
+<body class="studio-page"><a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-header"><div class="container header-inner">
+  <a href="/" class="brand" aria-label="Lumisland, página inicial"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="43" width="39" height="9" rx="2" fill="#F0B35B"/><path d="M16 43h12V19l-6-9-6 9v24Z" fill="#42D5C4"/><circle cx="22" cy="8" r="3" fill="#F0B35B"/><path d="M30 43h16l7 9H30v-9Z" fill="#E9EEF2"/></svg><span class="brand-word">Lumisland</span><span class="brand-note">Design & tecnologia</span></a>
+  <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+  <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+    <a href="#portfolio">Projetos</a><a href="#solucoes">Competências</a><a href="#processo">Processo</a><a href="sobre/">Sobre</a>
+    <a class="nav-cta" href="#contacto">Vamos conversar <span aria-hidden="true">↗</span></a>
+  </nav></div></header>
 
-<body>
-  <a class="skip-link" href="#conteudo">
-    Saltar para o conteúdo
-  </a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a
-        href="#inicio"
-        class="brand"
-        aria-label="Lumisland, página inicial"
-      >
-        <svg
-          class="brand-mark"
-          viewBox="0 0 64 64"
-          aria-hidden="true"
-        >
-          <rect
-            x="8"
-            y="43"
-            width="39"
-            height="9"
-            rx="2"
-            fill="#F0B35B"
-          ></rect>
-
-          <path
-            d="M16 43h12V19l-6-9-6 9v24Z"
-            fill="#42D5C4"
-          ></path>
-
-          <circle
-            cx="22"
-            cy="8"
-            r="3"
-            fill="#F0B35B"
-          ></circle>
-
-          <path
-            d="M30 43h16l7 9H30v-9Z"
-            fill="#E9EEF2"
-          ></path>
-        </svg>
-
-        <span class="brand-word">Lumisland</span>
-        <span class="brand-note">soluções digitais</span>
-      </a>
-
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        aria-controls="site-nav"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav
-        id="site-nav"
-        class="site-nav"
-        aria-label="Navegação principal"
-      >
-        <details class="nav-dropdown">
-          <summary>Soluções <span aria-hidden="true">⌄</span></summary>
-          <div class="nav-dropdown-menu">
-            <a href="aurea/"><strong>Beleza e bem-estar</strong><small>Agenda e gestão para marcações</small></a>
-            <a href="oficina/"><strong>Oficinas mecânicas</strong><small>Software de gestão para oficinas</small></a>
-            <a href="tvde/"><strong>Frotas TVDE</strong><small>Dashboard de ganhos, despesas e pagamentos</small></a>
-            <a href="criacao-de-sites/"><strong>Criação de websites</strong><small>Websites profissionais para empresas</small></a>
-          </div>
-        </details>
-        <a href="#setores">Setores</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#processo">Processo</a>
-        <a href="sobre/">Sobre</a>
-
-        <a class="nav-cta" href="#contacto">
-          Pedir proposta
-          <span aria-hidden="true">↗</span>
-        </a>
-      </nav>
+<main id="conteudo">
+  <section class="studio-hero" id="inicio" aria-labelledby="hero-title">
+    <div class="container studio-hero-grid">
+      <div class="studio-intro">
+        <p class="eyebrow"><span class="status-point" aria-hidden="true"></span> Web design & desenvolvimento full stack</p>
+        <h1 id="hero-title">Design com visão.<br>Código com<br><em>propósito.</em></h1>
+        <p class="intro-copy">Da primeira ideia à experiência final. Criamos websites, software e automações que ligam a sua marca ao que vem a seguir.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#portfolio">Explorar projetos <span aria-hidden="true">↗</span></a><a class="text-action" href="#contacto">Falar sobre uma ideia <span aria-hidden="true">↗</span></a></div>
+        <p class="studio-caption">Pensado ao detalhe. Desenvolvido à medida.</p>
+      </div>
+      <div class="sculpture" role="group" aria-label="Escultura digital animada que representa a ligação entre design e desenvolvimento">
+        <img class="sculpture-fallback" src="assets/images/digital-sculpture.svg" alt="" width="640" height="570">
+        <canvas aria-hidden="true" width="640" height="570"></canvas>
+        <span class="sculpture-label label-design" aria-hidden="true">Design + experiência</span>
+        <span class="sculpture-label label-code" aria-hidden="true">Código + engenharia</span>
+        <button class="motion-toggle" type="button" aria-pressed="false" hidden>Ⅱ Pausar animação</button>
+      </div>
     </div>
-  </header>
+    <div class="container hero-bottomline"><span>ESTÚDIO INDEPENDENTE · PORTUGAL</span><a href="#portfolio">Conheça o nosso trabalho ↓</a><span>CRIATIVIDADE COM BASE TÉCNICA</span></div>
+  </section>
+  <div class="expertise-strip" aria-label="Áreas de especialização"><div class="container"><span>Web design</span><i aria-hidden="true">✳</i><span>Desenvolvimento full stack</span><i aria-hidden="true">✳</i><span>Software à medida</span><i aria-hidden="true">✳</i><span>Automação</span></div></div>
 
-  <main id="conteudo">
-    <section id="inicio" class="hero-section">
-      <div class="hero-image" aria-hidden="true">
-        <img
-          src="assets/images/portfolio-automacao.webp"
-          alt=""
-        >
-      </div>
-
-      <div class="hero-overlay" aria-hidden="true"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow eyebrow-light">
-            <span class="eyebrow-line"></span>
-            Websites, software e automação
-          </p>
-
-          <h1>
-            O digital certo para o seu
-            <span>negócio.</span>
-          </h1>
-
-          <p class="hero-lead">
-            Criamos websites profissionais, sistemas de gestão,
-            portais, dashboards e automações adaptados à forma
-            como a sua empresa realmente trabalha.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#portfolio">
-              Ver projetos
-              <span aria-hidden="true">↘</span>
-            </a>
-
-            <a class="button button-quiet" href="#contacto">
-              Explicar a minha ideia
-            </a>
-          </div>
-
-          <div
-            class="hero-proof"
-            role="group"
-            aria-label="Áreas de trabalho da Lumisland"
-          >
-            <div>
-              <strong>10</strong>
-              <span>setores prioritários</span>
-            </div>
-
-            <div>
-              <strong>04</strong>
-              <span>tipos de solução</span>
-            </div>
-
-            <div>
-              <strong>PT</strong>
-              <span>serviço em Portugal</span>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Serviços Lumisland">
-          <div class="hero-card-top">
-            <span class="live-dot"></span>
-            <span>O que construímos</span>
-            <span class="hero-card-arrow">↗</span>
-          </div>
-
-          <div class="hero-card-line"></div>
-
-          <div class="hero-card-product">
-            <span class="product-index">01</span>
-
-            <div>
-              <strong>Websites e lojas</strong>
-              <small>Presença, vendas e captação de contactos</small>
-            </div>
-          </div>
-
-          <div class="hero-card-product">
-            <span class="product-index">02</span>
-
-            <div>
-              <strong>Sistemas de gestão</strong>
-              <small>Operações, clientes e equipas</small>
-            </div>
-          </div>
-
-          <div class="hero-card-product">
-            <span class="product-index">03</span>
-
-            <div>
-              <strong>Portais e dashboards</strong>
-              <small>Dados, estados e áreas reservadas</small>
-            </div>
-          </div>
-
-          <div class="hero-card-product">
-            <span class="product-index">04</span>
-
-            <div>
-              <strong>Automação e integrações</strong>
-              <small>Menos tarefas manuais e retrabalho</small>
-            </div>
-          </div>
-
-          <a class="hero-card-foot" href="#contacto">
-            <span>Começar pelo problema real</span>
-            <span>↗</span>
+  <section class="section studio-work" id="portfolio">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Do conceito ao produto</p><h2>Ideias que já<br>ganharam forma.</h2></div><p>Design, lógica e operação no mesmo projeto. Conheça os produtos que desenvolvemos para resolver problemas concretos.</p></div>
+      <div class="project-grid">
+        <article class="project project-featured">
+          <a class="project-surface project-aurea" href="aurea/" aria-label="Conhecer Áurea, agenda para beleza e bem-estar">
+            <div class="project-identity"><div><span class="project-logo">áurea</span><span class="project-label">Um produto Lumisland</span></div><p>Mais espaço para o seu talento.<br>Menos peso na gestão.</p></div>
+            <div class="project-mock agenda-mock" aria-hidden="true"><div class="mock-chrome"><strong>áurea</strong><span>Agenda &nbsp; Clientes &nbsp; Serviços</span></div><div class="mock-agenda-title"><strong>A sua semana, organizada.</strong><span>Vista semanal</span></div><div class="mock-calendar"><div class="mock-times"><span>09:00</span><span>10:00</span><span>11:00</span><span>12:00</span></div><div class="mock-day"><span>SEG</span><div class="mock-event">Corte & styling<small>09:00 — 10:00</small></div><div class="mock-event peach">Manicure<small>10:30 — 11:30</small></div></div><div class="mock-day"><span>TER</span><div class="mock-event mint later">Massagem<small>10:00 — 11:00</small></div><div class="mock-event">Coloração<small>11:30 — 12:30</small></div></div><div class="mock-day"><span>QUA</span><div class="mock-event peach">Estética<small>09:00 — 10:00</small></div><div class="mock-event mint later">Terapia<small>11:00 — 12:00</small></div></div></div></div>
           </a>
-        </aside>
-      </div>
-
-      <div class="container hero-bottom">
-        <span>Web design</span>
-        <i></i>
-        <span>Software</span>
-        <i></i>
-        <span>Automação</span>
-        <i></i>
-        <span>Integrações</span>
-
-        <span class="hero-location">
-          Portugal
-          <span aria-hidden="true">•</span>
-          desde 2026
-        </span>
-      </div>
-    </section>
-
-    <section
-      class="signal-strip"
-      aria-label="Benefícios das soluções"
-    >
-      <div class="container signal-inner">
-        <span class="signal-label">
-          Criado para empresas que precisam de:
-        </span>
-
-        <div class="signal-items">
-          <span>Mais clientes</span>
-          <span>Mais controlo</span>
-          <span>Menos tarefas manuais</span>
-          <span>Melhores decisões</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="solucoes" class="section section-paper">
-      <div class="container">
-        <div class="section-intro">
-          <div>
-            <p class="eyebrow">
-              <span class="eyebrow-line"></span>
-              Soluções
-            </p>
-
-            <h2>
-              Não fazemos “tudo”. Resolvemos quatro problemas digitais.
-            </h2>
-          </div>
-
-          <p>
-            Uma empresa pode precisar apenas de um website, de um
-            sistema completo ou de ligar ferramentas que já utiliza.
-            A solução começa no objetivo, não na tecnologia.
-          </p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-head">
-              <span class="chip">Presença digital</span>
-              <span class="solution-number">01</span>
-            </div>
-
-            <div class="service-media">
-              <img
-                src="assets/images/portfolio-websites.webp"
-                alt="Exemplo de website profissional desenvolvido à medida"
-                loading="lazy"
-              >
-            </div>
-
-            <h3>Websites e lojas online</h3>
-
-            <p>
-              Sites rápidos, responsivos e preparados para apresentar
-              a empresa, captar contactos ou vender produtos e serviços.
-            </p>
-
-            <ul class="feature-list">
-              <li>Website institucional ou landing page</li>
-              <li>Loja online e catálogo digital</li>
-              <li>SEO base, métricas e formulários</li>
-            </ul>
-
-            <a
-              class="card-link"
-              href="criacao-de-sites/"
-              data-product="Website profissional"
-            >
-              Conhecer criação de websites
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-head">
-              <span class="chip">Operação</span>
-              <span class="solution-number">02</span>
-            </div>
-
-            <div class="service-media">
-              <img
-                src="assets/images/portfolio-oficinas.webp"
-                alt="Exemplo de sistema de gestão operacional"
-                loading="lazy"
-              >
-            </div>
-
-            <h3>Sistemas de gestão</h3>
-
-            <p>
-              Software para centralizar clientes, tarefas, serviços,
-              stock, documentos, equipas e indicadores num fluxo único.
-            </p>
-
-            <ul class="feature-list">
-              <li>CRM, agenda e gestão de operações</li>
-              <li>Permissões, histórico e relatórios</li>
-              <li>Solução adaptada ao processo real</li>
-            </ul>
-
-            <a class="card-link" href="oficina/">
-              Conhecer Lumisland Oficina
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="service-card service-card-dark">
-            <div class="service-head">
-              <span class="chip chip-dark">Experiência</span>
-              <span class="solution-number">03</span>
-            </div>
-
-            <div class="service-media">
-              <img
-                src="assets/images/portfolio-frotas.webp"
-                alt="Exemplo de dashboard e portal de acompanhamento"
-                loading="lazy"
-              >
-            </div>
-
-            <h3>Portais e dashboards</h3>
-
-            <p>
-              Áreas reservadas para clientes, equipas ou gestão
-              acompanharem estados, documentos, pedidos e resultados.
-            </p>
-
-            <ul class="feature-list feature-list-dark">
-              <li>Portal do cliente ou colaborador</li>
-              <li>Dashboards e indicadores em tempo real</li>
-              <li>Mapas, alertas e acompanhamento</li>
-            </ul>
-
-            <a
-              class="card-link card-link-light"
-              href="#contacto"
-              data-product="Portal ou dashboard"
-            >
-              Pedir portal
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="service-card service-card-dark">
-            <div class="service-head">
-              <span class="chip chip-dark">Eficiência</span>
-              <span class="solution-number">04</span>
-            </div>
-
-            <div class="service-media">
-              <img
-                src="assets/images/portfolio-automacao.webp"
-                alt="Exemplo de automação de processos e integrações"
-                loading="lazy"
-              >
-            </div>
-
-            <h3>Automação e integrações</h3>
-
-            <p>
-              Ligamos formulários, e-mail, bases de dados, APIs e
-              ferramentas para eliminar trabalho repetitivo e erros manuais.
-            </p>
-
-            <ul class="feature-list feature-list-dark">
-              <li>Fluxos automáticos e notificações</li>
-              <li>Integrações com APIs e serviços externos</li>
-              <li>Importação, validação e consolidação de dados</li>
-            </ul>
-
-            <a
-              class="card-link card-link-light"
-              href="#contacto"
-              data-product="Automação e integrações"
-            >
-              Automatizar processo
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-        </div>
-
-        <article class="aurea-home-feature">
-          <div class="aurea-home-copy">
-            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Nova solução Lumisland</p>
-            <h3>Agenda para beleza e bem-estar.</h3>
-            <p>Para barbearias, salões, unhas, depilação, massagem e terapia. Crie a conta e teste o sistema completo durante 7 dias, sem cartão.</p>
-            <a class="button button-primary" href="aurea/" data-product="Beleza e bem-estar página">Conhecer a solução <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="aurea-home-sectors" aria-label="Setores disponíveis"><span>Barbearia</span><span>Salão</span><span>Unhas</span><span>Depilação</span><span>Massagem</span><span>Terapia</span></div>
+          <div class="project-meta"><div><h3>Áurea · Beleza & bem-estar</h3><p>Produto digital / Agenda / Experiência do cliente</p></div><a href="aurea/" class="round-arrow" aria-label="Conhecer Áurea">↗</a></div>
         </article>
-
-        <div class="custom-solution">
-          <div class="custom-mark" aria-hidden="true">+</div>
-
-          <div>
-            <p class="eyebrow">Projeto personalizado</p>
-            <h3>O seu caso não cabe numa categoria?</h3>
-
-            <p>
-              Descreva o processo, o problema ou a ideia. A primeira etapa
-              é definir o que deve ser resolvido e o que não vale a pena
-              construir.
-            </p>
-          </div>
-
-          <a
-            class="button button-dark"
-            href="#contacto"
-            data-product="Projeto personalizado"
-          >
-            Analisar o meu caso
-            <span aria-hidden="true">↗</span>
+        <article class="project">
+          <a class="project-surface project-oficina" href="oficina/" aria-label="Conhecer Lumisland Oficina">
+            <div class="project-mini-title">Lumisland Oficina <span>GESTÃO OPERACIONAL</span></div>
+            <div class="project-mock ops-mock" aria-hidden="true"><strong>Cada serviço, no lugar certo.</strong><div class="ops-columns"><div>Receção<div class="ops-ticket">Diagnóstico<br>Equipamento recebido<i></i></div></div><div>Em curso<div class="ops-ticket">Reparação<br>Intervenção técnica<i></i></div></div><div>Concluído<div class="ops-ticket">Entrega<br>Pronto para levantar<i></i></div></div></div></div>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="setores" class="section sector-section">
-      <div class="container">
-        <div class="section-intro">
-          <div>
-            <p class="eyebrow">
-              <span class="eyebrow-line"></span>
-              10 setores prioritários
-            </p>
-
-            <h2>O setor muda. Os problemas repetem-se.</h2>
-          </div>
-
-          <p>
-            Falta de presença digital, informação espalhada, tarefas
-            manuais, dificuldade em acompanhar clientes e pouca
-            visibilidade sobre a operação.
-          </p>
-        </div>
-
-        <div class="sector-grid">
-          <article class="sector-card">
-            <span class="sector-number">01</span>
-            <h3>Comércio e retalho</h3>
-            <p>Website, loja online, catálogo, encomendas, stock e fidelização.</p>
-            <span class="sector-result">Vender e organizar</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">02</span>
-            <h3>Restauração e cafés</h3>
-            <p>Menus digitais, reservas, pedidos, equipa, fornecedores e relatórios.</p>
-            <span class="sector-result">Atender com menos falhas</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">03</span>
-            <h3>Clínicas e consultórios</h3>
-            <p>Agenda, formulários, comunicação, documentos e acompanhamento.</p>
-            <span class="sector-result">Simplificar o atendimento</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">04</span>
-            <h3>Oficinas e assistência</h3>
-            <p>Clientes, equipamentos, ordens, orçamentos, stock e estados.</p>
-            <span class="sector-result">Controlar a operação</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">05</span>
-            <h3>Construção e manutenção</h3>
-            <p>Obras, equipas, visitas, orçamentos, materiais e evidências.</p>
-            <span class="sector-result">Acompanhar cada trabalho</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">06</span>
-            <h3>Imobiliário</h3>
-            <p>Imóveis, leads, visitas, propostas, documentos e follow-up.</p>
-            <span class="sector-result">Converter mais contactos</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">07</span>
-            <h3>Turismo e alojamento</h3>
-            <p>Reservas, hóspedes, informação, pedidos e comunicação automática.</p>
-            <span class="sector-result">Melhorar a experiência</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">08</span>
-            <h3>Transportes e logística</h3>
-            <p>Frotas, rotas, entregas, motoristas, custos, alertas e manutenção.</p>
-            <span class="sector-result">Ver o que acontece</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">09</span>
-            <h3>Serviços profissionais</h3>
-            <p>CRM, projetos, propostas, tarefas, documentos e faturação.</p>
-            <span class="sector-result">Ganhar produtividade</span>
-          </article>
-
-          <article class="sector-card">
-            <span class="sector-number">10</span>
-            <h3>Beleza, fitness e bem-estar</h3>
-            <p>Website, agenda, clientes, planos, pagamentos e campanhas.</p>
-            <span class="sector-result">Atrair e reter clientes</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section section-dark">
-      <div class="container">
-        <div class="section-intro section-intro-dark">
-          <div>
-            <p class="eyebrow eyebrow-light">
-              <span class="eyebrow-line"></span>
-              Portfólio
-            </p>
-
-            <h2>
-              Exemplos que mostram capacidade, não um único nicho.
-            </h2>
-          </div>
-
-          <p>
-            As imagens representam diferentes tipos de solução que
-            podemos adaptar a outros setores, processos, marcas e
-            níveis de complexidade.
-          </p>
-        </div>
-
-        <div class="showcase-grid">
-          <article class="showcase-card showcase-card-wide">
-            <a
-              class="showcase-image"
-              href="#contacto"
-              data-product="Website profissional"
-              aria-label="Pedir um website profissional"
-            >
-              <img
-                src="assets/images/portfolio-websites.webp"
-                alt="Website profissional com apresentação comercial e painel digital"
-                loading="lazy"
-              >
-
-              <span class="showcase-label">
-                Websites e presença digital
-              </span>
-            </a>
-
-            <div class="showcase-body">
-              <div>
-                <span class="case-kicker">01 / Web</span>
-                <h3>Website comercial orientado a resultados</h3>
-              </div>
-
-              <p>
-                Identidade, conteúdo, serviços, chamadas para ação,
-                formulário, SEO base e medição de campanhas.
-              </p>
-            </div>
-          </article>
-
-          <article class="showcase-card">
-            <a
-              class="showcase-image"
-              href="#contacto"
-              data-product="Automação e integrações"
-              aria-label="Pedir uma solução de automação"
-            >
-              <img
-                src="assets/images/portfolio-automacao.webp"
-                alt="Plataforma de automação com fluxos, integrações e métricas"
-                loading="lazy"
-              >
-
-              <span class="showcase-label">
-                Automação e integrações
-              </span>
-            </a>
-
-            <div class="showcase-body">
-              <div>
-                <span class="case-kicker">02 / Automação</span>
-                <h3>Fluxos personalizados</h3>
-              </div>
-
-              <p>
-                Formulários, regras, validações, responsáveis,
-                notificações e integrações num processo visual.
-              </p>
-            </div>
-          </article>
-
-          <article class="showcase-card">
-            <a
-              class="showcase-image"
-              href="#contacto"
-              data-product="Portal ou dashboard"
-              aria-label="Pedir um dashboard operacional"
-            >
-              <img
-                src="assets/images/portfolio-frotas.webp"
-                alt="Dashboard operacional com indicadores, mapa e alertas"
-                loading="lazy"
-              >
-
-              <span class="showcase-label">
-                Dashboards operacionais
-              </span>
-            </a>
-
-            <div class="showcase-body">
-              <div>
-                <span class="case-kicker">03 / Dados</span>
-                <h3>Visão central da operação</h3>
-              </div>
-
-              <p>
-                Indicadores, mapas, estados, equipas, alertas
-                e desempenho apresentados de forma clara.
-              </p>
-            </div>
-          </article>
-
-          <article class="showcase-card showcase-card-wide">
-            <a
-              class="showcase-image"
-              href="#contacto"
-              data-product="Sistema de gestão"
-              aria-label="Pedir um sistema de gestão"
-            >
-              <img
-                src="assets/images/portfolio-oficinas.webp"
-                alt="Sistema ERP com ordens, clientes, agenda, stock e relatórios"
-                loading="lazy"
-              >
-
-              <span class="showcase-label">
-                Sistemas de gestão
-              </span>
-            </a>
-
-            <div class="showcase-body">
-              <div>
-                <span class="case-kicker">04 / Gestão</span>
-                <h3>ERP adaptado ao processo</h3>
-              </div>
-
-              <p>
-                Clientes, serviços, agenda, stock, equipa, relatórios
-                e histórico, sem depender de folhas e mensagens soltas.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="processo" class="section section-paper">
-      <div class="container">
-        <div class="section-intro">
-          <div>
-            <p class="eyebrow">
-              <span class="eyebrow-line"></span>
-              Processo
-            </p>
-
-            <h2>Primeiro clareza. Depois tecnologia.</h2>
-          </div>
-
-          <p>
-            Construir rapidamente não significa começar sem direção.
-            Definimos a prioridade, entregamos uma primeira versão útil
-            e evoluímos com base no uso real.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-step">
-            <span class="step-number">01</span>
-            <div class="step-line"></div>
-            <h3>Diagnosticar</h3>
-
-            <p>
-              Mapeamos o problema, os utilizadores, os dados disponíveis,
-              os riscos e o resultado esperado.
-            </p>
-          </article>
-
-          <article class="process-step">
-            <span class="step-number">02</span>
-            <div class="step-line"></div>
-            <h3>Construir</h3>
-
-            <p>
-              Desenhamos, desenvolvemos e colocamos no ar uma primeira
-              versão funcional e mensurável.
-            </p>
-          </article>
-
-          <article class="process-step">
-            <span class="step-number">03</span>
-            <div class="step-line"></div>
-            <h3>Evoluir</h3>
-
-            <p>
-              Corrigimos, automatizamos e acrescentamos apenas o que
-              melhora o resultado ou reduz trabalho.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="investimento" class="section investment-section">
-      <div class="container">
-        <div class="section-intro">
-          <div>
-            <p class="eyebrow">
-              <span class="eyebrow-line"></span>
-              Investimento
-            </p>
-
-            <h2>Começar pelo tamanho certo.</h2>
-          </div>
-
-          <p>
-            Cada projeto é dimensionado conforme o conteúdo, regras,
-            integrações, dados e suporte necessários.
-          </p>
-        </div>
-
-        <div class="investment-list">
-          <a
-            class="investment-row"
-            href="#contacto"
-            data-product="Website profissional"
-          >
-            <span class="investment-number">01</span>
-            <span class="investment-name">Website profissional</span>
-            <span class="investment-detail">Design, conteúdo e SEO base</span>
-            <span class="investment-arrow">↗</span>
+          <div class="project-meta"><div><h3>Organizar. Reparar. Entregar.</h3><p>Software de gestão / Processos / Operações</p></div><a href="oficina/" class="round-arrow" aria-label="Conhecer Lumisland Oficina">↗</a></div>
+        </article>
+        <article class="project">
+          <a class="project-surface project-tvde" href="tvde/" aria-label="Conhecer Dashboard TVDE">
+            <div class="project-mini-title">Dashboard TVDE <span>DADOS & AUTOMAÇÃO</span></div>
+            <div class="project-mock ops-mock fleet-mock" aria-hidden="true"><strong>A operação numa só perspetiva.</strong><p class="fleet-sub">Recolher → Validar → Calcular → Fechar</p><div class="fleet-chart"><i style="--bar:34%"></i><i style="--bar:51%"></i><i style="--bar:43%"></i><i style="--bar:68%"></i><i style="--bar:60%"></i><i style="--bar:85%"></i><i style="--bar:74%"></i></div><div class="fleet-legend"><span>Motoristas</span><span>Movimentos</span><span>Fecho semanal</span></div></div>
           </a>
-
-          <a
-            class="investment-row investment-row-featured"
-            href="#contacto"
-            data-product="Sistema de gestão"
-          >
-            <span class="investment-number">02</span>
-            <span class="investment-name">Sistema inicial</span>
-            <span class="investment-detail">
-              Um processo principal bem resolvido
-            </span>
-            <span class="investment-arrow">↗</span>
-          </a>
-
-          <a
-            class="investment-row"
-            href="#contacto"
-            data-product="Projeto personalizado"
-          >
-            <span class="investment-number">03</span>
-            <span class="investment-name">Projeto evolutivo</span>
-            <span class="investment-detail">
-              Módulos, integrações e melhoria contínua
-            </span>
-            <span class="investment-arrow">↗</span>
-          </a>
-        </div>
+          <div class="project-meta"><div><h3>Uma frota. Uma visão completa.</h3><p>Dashboard / Integrações / Gestão de frotas</p></div><a href="tvde/" class="round-arrow" aria-label="Conhecer Dashboard TVDE">↗</a></div>
+        </article>
       </div>
-    </section>
+      <p class="work-footnote">Representações ilustrativas dos produtos. Explore cada solução para conhecer as funcionalidades.</p>
+    </div>
+  </section>
 
-    <section id="notas" class="section section-paper blog-section">
-      <div class="container">
-        <div class="section-intro">
-          <div>
-            <p class="eyebrow">
-              <span class="eyebrow-line"></span>
-              Decisões digitais
-            </p>
+  <section class="section capabilities" id="solucoes"><div class="container capability-layout">
+    <div class="capability-intro"><p class="eyebrow">Da interface à infraestrutura</p><h2>Um parceiro.<br>Todas as camadas.</h2><p>Um bom resultado precisa de mais do que uma boa aparência. Desenhamos a experiência e construímos a tecnologia que a torna possível.</p><a class="text-action" href="#contacto">Encontrar a solução certa <span aria-hidden="true">↗</span></a></div>
+    <div class="capability-list">
+      <details open><summary>Web design & websites</summary><div class="capability-content"><p>Uma presença digital com a personalidade da sua marca. Websites e lojas online com navegação clara, atenção ao detalhe e uma experiência pensada para cada ecrã.</p><div class="tags"><span>UI / UX</span><span>Design responsivo</span><span>SEO base</span><span>Lojas online</span></div><a href="criacao-de-sites/">Conhecer criação de websites <span aria-hidden="true">↗</span></a></div></details>
+      <details><summary>Desenvolvimento full stack</summary><div class="capability-content"><p>Da interface às bases de dados: aplicações, portais e sistemas que acompanham a forma como a sua empresa trabalha. Com regras, permissões e integrações pensadas em conjunto.</p><div class="tags"><span>Frontend</span><span>Backend</span><span>APIs</span><span>Bases de dados</span></div><a href="#contacto" data-product="Sistema de gestão">Conversar sobre o sistema <span aria-hidden="true">↗</span></a></div></details>
+      <details><summary>Automação & integrações</summary><div class="capability-content"><p>Ligamos as ferramentas que já utiliza e simplificamos as tarefas repetitivas. Menos informação para copiar, mais tempo para decidir e agir.</p><div class="tags"><span>Fluxos de trabalho</span><span>Integrações</span><span>Notificações</span></div><a href="#contacto" data-product="Automação e integrações">Analisar um processo <span aria-hidden="true">↗</span></a></div></details>
+      <details><summary>Portais & dashboards</summary><div class="capability-content"><p>Transformamos informação dispersa numa visão útil. Áreas de cliente, portais de equipa e indicadores que ajudam a acompanhar o que realmente importa.</p><div class="tags"><span>Visualização de dados</span><span>Áreas reservadas</span><span>Relatórios</span></div><a href="#contacto" data-product="Portal ou dashboard">Dar forma aos seus dados <span aria-hidden="true">↗</span></a></div></details>
+    </div>
+  </div></section>
 
-            <h2>Nem todo problema precisa de um sistema.</h2>
-          </div>
+  <section class="section studio-statement" id="processo"><div class="container">
+    <div class="statement-top"><p class="eyebrow">A forma como construímos</p><span>CLAREZA → DESIGN → DESENVOLVIMENTO</span></div>
+    <h2>A diferença está no que se vê.<br><span>E em tudo o que funciona<br>por trás.</span></h2>
+    <div class="process-rail"><article><span>01 / DESCOBERTA</span><h3>Perceber antes de propor.</h3><p>Ouvimos o seu objetivo, conhecemos o processo e definimos o que vale a pena construir.</p></article><article><span>02 / DESIGN & CÓDIGO</span><h3>Dar forma. Fazer funcionar.</h3><p>Desenhamos, desenvolvemos e validamos uma solução em que cada detalhe tem uma função.</p></article><article><span>03 / LANÇAMENTO & EVOLUÇÃO</span><h3>Publicar é o começo.</h3><p>Acompanhamos a entrega e definimos os próximos passos com base no uso e nas necessidades reais.</p></article></div>
+  </div></section>
 
-          <p>
-            O objetivo é escolher a solução com melhor relação
-            entre custo, impacto e manutenção.
-          </p>
-        </div>
+  <section class="section" id="sobre"><div class="container">
+    <div class="studio-person"><div class="portrait-wrap"><img src="assets/images/michael-claro-founder-v2.webp" alt="Michael Claro, fundador da Lumisland" width="960" height="1200" loading="lazy"><div class="portrait-note">Michael Claro<small>Fundador · Design & desenvolvimento</small></div></div><div class="person-copy"><p class="eyebrow">Pessoas antes de tecnologia</p><h2>Contacto direto.<br>Do primeiro olá<br>à última entrega.</h2><p>Sou o Michael, fundador da Lumisland. Acompanho o seu projeto de perto: do diagnóstico e das decisões de design ao desenvolvimento e à validação. Sabe com quem fala e quem está a construir a sua solução.</p><a class="text-action" href="sobre/">Conhecer a Lumisland <span aria-hidden="true">↗</span></a></div></div>
+    <div class="sector-line" id="setores"><span>TECNOLOGIA QUE SE ADAPTA AO SEU SETOR</span><p>Serviços, comércio, beleza, oficinas, transportes, turismo e outros negócios. Começamos sempre pelo seu desafio.</p></div>
+  </div></section>
 
-        <div class="notes-grid">
-          <article class="note-card">
-            <span class="note-type">Website</span>
-
-            <h3>
-              Quando um bom website resolve mais do que uma
-              plataforma complexa.
-            </h3>
-
-            <a
-              href="#contacto"
-              data-product="Website profissional"
-            >
-              Avaliar o meu caso
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="note-card">
-            <span class="note-type">Gestão</span>
-
-            <h3>
-              O sinal de que a empresa já cresceu para lá
-              das folhas de cálculo.
-            </h3>
-
-            <a
-              href="#contacto"
-              data-product="Sistema de gestão"
-            >
-              Avaliar o meu caso
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="note-card">
-            <span class="note-type">Automação</span>
-
-            <h3>
-              Automatizar a tarefa certa vale mais do que
-              adicionar dez funcionalidades.
-            </h3>
-
-            <a
-              href="#contacto"
-              data-product="Automação e integrações"
-            >
-              Avaliar o meu caso
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="contact-section">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <p class="eyebrow eyebrow-light">
-            <span class="eyebrow-line"></span>
-            Primeiro contacto
-          </p>
-
-          <h2>O que precisa de funcionar melhor?</h2>
-
-          <p>
-            Explique o objetivo, o processo atual ou a ideia.
-            Respondemos com uma primeira leitura e um próximo passo concreto.
-          </p>
-
-          <div class="contact-email">
-            <span>E-mail</span>
-
-            <a href="mailto:contacto@lumisland.pt">
-              contacto@lumisland.pt
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <form
+  <section class="contact-section studio-contact" id="contacto"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow eyebrow-light">O próximo projeto pode ser o seu</p><h2>Tem uma ideia?<br>Vamos dar-lhe<br>forma.</h2><p>Um novo website, um sistema à medida ou um processo que precisa de mudar. Conte-nos onde quer chegar.</p><div class="contact-email"><span>Escreva-nos</span><a href="mailto:contacto@lumisland.pt">contacto@lumisland.pt <span aria-hidden="true">↗</span></a></div><div class="contact-direct"><a href="https://wa.me/351926741263" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp ↗</a><a href="sobre/">Conhecer quem vai construir ↗</a></div></div><form
           class="contact-form"
           id="contact-form"
           action="https://formsubmit.co/contacto@lumisland.pt"
@@ -1104,15 +185,15 @@
           <input
             type="text"
             name="_honey"
-            class="hidden-field"
+            class="hidden-field" aria-hidden="true"
             tabindex="-1"
             autocomplete="off"
           >
 
           <div class="form-heading">
-            <span>01</span>
-            <strong>Solicitar contacto</strong>
-            <small>Normalmente respondemos em 1 dia útil.</small>
+            <span aria-hidden="true">↗</span>
+            <strong>Falar sobre o projeto</strong>
+            <small>Resposta habitual em 1 dia útil.</small>
           </div>
 
           <label>
@@ -1220,7 +301,7 @@
             class="button button-primary form-full"
             type="submit"
           >
-            Solicitar contacto
+            Falar sobre o projeto
             <span aria-hidden="true">↗</span>
           </button>
 
@@ -1229,110 +310,10 @@
             id="form-status"
             role="status"
           ></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-top">
-      <a
-        href="#inicio"
-        class="brand footer-brand"
-        aria-label="Lumisland, página inicial"
-      >
-        <svg
-          class="brand-mark"
-          viewBox="0 0 64 64"
-          aria-hidden="true"
-        >
-          <rect
-            x="8"
-            y="43"
-            width="39"
-            height="9"
-            rx="2"
-            fill="#F0B35B"
-          ></rect>
-
-          <path
-            d="M16 43h12V19l-6-9-6 9v24Z"
-            fill="#42D5C4"
-          ></path>
-
-          <circle
-            cx="22"
-            cy="8"
-            r="3"
-            fill="#F0B35B"
-          ></circle>
-
-          <path
-            d="M30 43h16l7 9H30v-9Z"
-            fill="#E9EEF2"
-          ></path>
-        </svg>
-
-        <span class="brand-word">Lumisland</span>
-      </a>
-
-      <p>
-        Websites, software e automação para empresas.
-      </p>
-
-      <div class="footer-links">
-        <a href="#solucoes">Soluções</a>
-        <a href="#setores">Setores</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#processo">Processo</a>
-        <a href="sobre/">Sobre</a>
-        <a href="#contacto">Contacto</a>
-        <a href="privacidade.html">Privacidade</a>
-        <a href="cookies.html">Cookies</a>
-        <a href="aviso-legal.html">Aviso legal</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>&copy; 2026 Lumisland</span>
-      <span>Portugal</span>
-      <span>
-        Website protegido por HTTPS, GitHub Pages e Cloudflare.
-      </span>
-    </div>
-  </footer>
-
-  <!-- Botão flutuante do WhatsApp -->
-  <!-- Substitua 351926741263 pelo número real sem +, espaços ou hífen -->
-  <a
-    class="whatsapp-floating"
-    href="https://wa.me/351926741263?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Lumisland%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20vossas%20solu%C3%A7%C3%B5es."
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Falar com a Lumisland pelo WhatsApp"
-    title="Falar com a Lumisland pelo WhatsApp"
-  >
-    <svg
-      viewBox="0 0 32 32"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path
-        fill="currentColor"
-        d="M19.11 17.21c-.28-.14-1.63-.8-1.88-.89-.25-.09-.43-.14-.61.14-.18.27-.7.89-.86 1.07-.16.18-.32.2-.59.07-.28-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.63-1.53-1.91-.16-.27-.02-.42.12-.56.12-.12.28-.32.41-.48.14-.16.18-.27.28-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.57.66.21 1.25.18 1.72.11.53-.08 1.63-.67 1.86-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.53-.31Z"
-      ></path>
-
-      <path
-        fill="currentColor"
-        d="M16.03 3C8.84 3 3 8.78 3 15.91c0 2.28.6 4.5 1.74 6.45L3 29l6.82-1.78a13.11 13.11 0 0 0 6.2 1.57h.01C23.22 28.79 29 23 29 15.91 29 8.78 23.22 3 16.03 3Zm0 23.61h-.01a10.9 10.9 0 0 1-5.56-1.52l-.4-.23-4.05 1.06 1.08-3.93-.26-.41a10.67 10.67 0 0 1-1.65-5.67c0-5.92 4.87-10.74 10.86-10.74 5.98 0 10.84 4.82 10.84 10.74 0 5.92-4.86 10.7-10.85 10.7Z"
-      ></path>
-    </svg>
-
-    <span class="whatsapp-floating-text">
-      Fale connosco
-    </span>
-  </a>
-
-  <script src="js/app.js?v=20260814-2" defer></script>
-</body>
-</html>
+        </form></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-top"><a href="/" class="brand footer-brand" aria-label="Lumisland, página inicial"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="43" width="39" height="9" rx="2" fill="#F0B35B"/><path d="M16 43h12V19l-6-9-6 9v24Z" fill="#42D5C4"/><circle cx="22" cy="8" r="3" fill="#F0B35B"/><path d="M30 43h16l7 9H30v-9Z" fill="#E9EEF2"/></svg><span class="brand-word">Lumisland</span></a><p>Design com visão. Código com propósito.</p><div class="footer-links"><a href="#portfolio">Projetos</a><a href="criacao-de-sites/">Websites</a><a href="aurea/">Áurea</a><a href="oficina/">Oficina</a><a href="tvde/">TVDE</a><a href="sobre/">Sobre</a><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a><a href="aviso-legal.html">Aviso legal</a></div></div><div class="container studio-footer-word" aria-hidden="true">Lumisland.</div><div class="container footer-bottom"><span>© 2026 Lumisland</span><span>Estúdio independente · Portugal</span><a href="#inicio">Voltar ao início ↑</a></div></footer>
+<a class="whatsapp-floating" href="https://wa.me/351926741263" target="_blank" rel="noopener noreferrer" aria-label="Falar com a Lumisland pelo WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.2 8L3 21l1.5-4.8A9 9 0 1 1 21 11.5Z"/><path d="M8 7.5c0 4.3 3.7 8 8 8l1-2.2-2.8-1.2-1 1a7 7 0 0 1-2.4-2.4l1-1L10 7Z"/></svg><span class="whatsapp-floating-text">Vamos conversar</span></a>
+<script src="js/app.js?v=20260923-2" defer></script>
+<script src="js/sculpture.js?v=20260923-2" defer></script>
+</body></html>

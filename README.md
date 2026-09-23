@@ -1,6 +1,30 @@
 # lumisland-site
 
-Site institucional da Lumisland, preparado para publicação no Cloudflare Pages.
+Site institucional da Lumisland, publicado em `https://lumisland.pt/` pelo GitHub
+Pages a partir da raiz da branch `main`. A configuração foi confirmada na API do
+GitHub em 23 de setembro de 2026. A publicação ocorre após push autorizado.
+
+## Pré-visualização e verificação
+
+O site continua estático, sem dependências de frontend ou etapa de build.
+
+```powershell
+python scripts/preview.py
+```
+
+Abrir `http://127.0.0.1:4174/`. O servidor liga apenas à máquina local e não guarda
+cache dos ficheiros durante a revisão. `?qa-form=1` substitui o destino do formulário
+por um recetor local que não guarda dados nem envia e-mails. `?qa-nojs=1` permite
+verificar o conteúdo sem scripts. Estes modos existem apenas no servidor local.
+
+```powershell
+python scripts/check_site.py
+node --check js/app.js
+node --check js/sculpture.js
+```
+
+A identidade partilhada está em `css/premium.css`, documentada em `DESIGN.md`.
+`QA.md` regista a verificação da repaginação de setembro de 2026.
 
 ## Estrutura
 
