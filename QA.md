@@ -80,3 +80,34 @@ contra o código e os testes reais:
 As três decisões de select nativo estão documentadas no manifesto. Dois botões
 decorativos sem ação na prévia do TVDE foram convertidos em texto estilizado.
 Não se afirma uma auditoria completa WCAG nem teste de entrega externa de e-mail.
+
+## Repaginação das quatro soluções — 25/09/2026
+
+- Rotas: `/aurea/`, `/oficina/`, `/tvde/` e `/criacao-de-sites/`, identificadas no
+  menu Soluções de `/sobre/` publicado. Base: commit `4f1eced` de `main`.
+- Apresentações próprias, nova composição de produto, secções interiores,
+  recursos, planos e perguntas com o sistema partilhado em `css/solutions.css`.
+- Inspeção visual no navegador: cabeçalhos e secções interiores em desktop
+  1440×960 e telemóvel 390×844; cabeçalhos adicionais em 320×740. Verificação DOM
+  das quatro rotas em 320, 820 e 1440px: um h1 por página, sem overflow horizontal,
+  sem títulos/cartões/formulários com texto transbordante e sem imagens carregadas
+  com erro. As imagens lazy ainda não carregadas não contam como verificadas.
+- Menus móveis abrem e fecham com Escape; os quatro menus incluem as quatro
+  soluções. Primeira pergunta de cada rota abre corretamente.
+- TVDE usa select nativo: PT, EN, ES, FR, DE e IT mudam o título e a apresentação;
+  seleção PT persiste após recarregar. Os seis catálogos foram comparados com HEAD
+  e mantidos exatamente. Nomes de idiomas e marca respeitam `translate="no"`.
+- Formulários Websites/Oficina: submissão vazia identifica respetivamente 4/5
+  campos inválidos e foca o nome; preenchimento sintético chega ao recetor local
+  `/__qa__/submitted`, sem envio externo nem armazenamento. Destinos, campos,
+  consentimentos e contratos comerciais preservados.
+- Websites sem JavaScript: menu visível e validação nativa disponível, sem
+  overflow. Movimento reduzido mantém o conteúdo visível; CSS desativa animações
+  e transições. Efeitos hover são melhorias opcionais para dispositivos com rato.
+- `python scripts/check_site.py`: 12 páginas, referências e contratos preservados.
+  `node --check` em app.js, sculpture.js e tvde-i18n.js: passou.
+- Auditor estrito reexecutado: continuam as mesmas 16 ocorrências já explicadas
+  acima (handlers externos, validação runtime e CSS partilhado). Não é um audit
+  limpo; não surgiram novas categorias de ocorrência.
+- Publicação em produção autorizada pelo pedido anterior “aplique no prd” e
+  estendida pelo pedido de repaginar cada solução.

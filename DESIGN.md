@@ -143,6 +143,30 @@ previews use illustrative schedules/workflows, not customer data or claimed resu
 Keep the contact human, direct and practical. Preserve the substance of privacy,
 cookies, pricing and commercial conditions when editing presentation.
 
+## Solution pages — 25 September 2026
+
+The four routes linked from Sobre use `css/solutions.css`, loaded after the shared
+brand layer. `.solution-page` scopes every override; other public pages retain
+their existing presentation. The new stage composition pairs editorial type with
+an illustrative product preview, followed by lighter feature lists and clear
+commercial sections. Pricing, trial terms, destinations and form contracts stay
+unchanged.
+
+- Oficina and Websites: cobalt `#3159dc`, tint `#e9efff`, deep `#193b98`.
+- Áurea: plum `#834465`, tint `#f3e9f0`, deep `#522b41`; photography and an
+  illustrative day card introduce the product, followed by sector portraits.
+- TVDE: green `#187861`, tint `#e5f3ed`, deep `#124a3d`; preview, workflows and
+  commercial modes share the same accent.
+- Website illustration: original HTML/CSS desktop and mobile design study,
+  explicitly labelled illustrative. No fabricated customer project or metric.
+- Hero stages use a 30px radius (20px mobile); h1 scales 41–76px. Two columns
+  become one below 1000px, with all four pages verified down to 320px.
+- Motion reuses existing progressive scroll reveals and adds restrained hover
+  movement; reduced motion disables solution animations/transitions.
+- TVDE language choice is a native, labelled select with a 44px control height.
+  The OS owns its popup. The existing six catalogs and saved-locale key remain
+  unchanged; `translate="no"` protects product marks and language names.
+
 ## Do's and Don'ts
 
 - Do make implemented Lumisland products visible proof of capability.

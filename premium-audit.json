@@ -3,7 +3,7 @@
     {
       "category": "violation",
       "file": "aurea/index.html",
-      "line": 37,
+      "line": 38,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -30,7 +30,7 @@
     {
       "category": "violation",
       "file": "criacao-de-sites/index.html",
-      "line": 43,
+      "line": 44,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -57,7 +57,7 @@
     {
       "category": "violation",
       "file": "oficina/index.html",
-      "line": 69,
+      "line": 70,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -84,7 +84,7 @@
     {
       "category": "violation",
       "file": "tvde/index.html",
-      "line": 37,
+      "line": 38,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -93,7 +93,7 @@
     {
       "category": "violation",
       "file": "criacao-de-sites/index.html",
-      "line": 131,
+      "line": 140,
       "message": "Application-owned form does not declare its validation owner.",
       "remediation": "Add noValidate/novalidate and implement the canonical validation contract.",
       "ruleId": "form.novalidate-missing",
@@ -111,7 +111,7 @@
     {
       "category": "violation",
       "file": "oficina/index.html",
-      "line": 304,
+      "line": 305,
       "message": "Application-owned form does not declare its validation owner.",
       "remediation": "Add noValidate/novalidate and implement the canonical validation contract.",
       "ruleId": "form.novalidate-missing",
@@ -120,7 +120,7 @@
     {
       "category": "violation",
       "file": "criacao-de-sites/index.html",
-      "line": 136,
+      "line": 145,
       "message": "Literal product textarea does not show evidence of the canonical resize-none rule.",
       "remediation": "Use the shared Textarea owner or apply resize-none/resize: none with adequate height or auto-grow behavior.",
       "ruleId": "form.textarea-resize-missing",
@@ -138,7 +138,7 @@
     {
       "category": "violation",
       "file": "oficina/index.html",
-      "line": 331,
+      "line": 332,
       "message": "Literal product textarea does not show evidence of the canonical resize-none rule.",
       "remediation": "Use the shared Textarea owner or apply resize-none/resize: none with adequate height or auto-grow behavior.",
       "ruleId": "form.textarea-resize-missing",
