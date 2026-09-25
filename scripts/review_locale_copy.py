@@ -3,6 +3,10 @@ import json
 from i18n_source import ROOT, LOCALES, inventory
 
 COPY = {
+    'A sua marca merece': ['Your brand deserves','Tu marca merece','Votre marque mérite','Ihre Marke verdient','Il tuo brand merita'],
+    'um website': ['a website','un sitio web','un site web','eine Website','un sito web'],
+    'à sua altura.': ['that does it justice.','a su altura.','à sa hauteur.','die ihr gerecht wird.','all’altezza.'],
+    'Já chegou até nós.': ['We have your message.','Hemos recibido tu mensaje.','Nous avons reçu votre message.','Ihre Nachricht ist angekommen.','Abbiamo ricevuto il tuo messaggio.'],
     'Menos papéis.': ['Less paperwork.','Menos papeleo.','Moins de paperasse.','Weniger Papierkram.','Meno scartoffie.'],
     'Mais controlo sobre': ['More control over','Más control sobre','Plus de contrôle sur','Mehr Kontrolle über','Più controllo su'],
     'cada serviço.': ['every job.','cada trabajo.','chaque intervention.','jeden Auftrag.','ogni intervento.'],
