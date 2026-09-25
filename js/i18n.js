@@ -3,7 +3,7 @@
   'use strict';
   const locales = ['pt-PT', 'en-GB', 'es-ES', 'fr-FR', 'de-DE', 'it-IT'];
   const names = ['Português', 'English', 'Español', 'Français', 'Deutsch', 'Italiano'];
-  const version = '20260925-2';
+  const version = '20260925-3';
   const sourceLocale = 'pt-PT';
   const key = 'lumisland_locale';
   const normalize = value => value.trim().replace(/\s+/g, ' ');
