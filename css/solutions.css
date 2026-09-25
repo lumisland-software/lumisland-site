@@ -54,6 +54,42 @@
 .solution-page .tvde-language select:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 /* Áurea: editorial photography and the rhythm of a working day. */
 .aurea-stage { padding-bottom: 28px; }
+.booking-demo { overflow: hidden; border: 1px solid #e3d3df; border-radius: 17px; background: white; box-shadow: 0 22px 45px #522b4112; }
+.booking-address { display: flex; gap: 16px; align-items: center; padding: 13px 18px; border-bottom: 1px solid #eee5eb; color: #786374; font: 9px var(--mono); }
+.booking-address>span:first-child { letter-spacing: .2em; color: #cbbdca; }
+.booking-content { padding: 25px; }
+.booking-kicker { font: 8px var(--mono); letter-spacing: .08em; color: var(--accent); }
+.booking-content h2 { font: 500 34px/1.1 var(--display); letter-spacing: -.04em; color: var(--ink); margin: 15px 0 20px; }
+.booking-progress { display: flex; gap: 12px; align-items: center; color: #806778; font-size: 10px; }
+.booking-progress i { color: #b6a0ae; font-style: normal; }
+.booking-service { display: flex; align-items: center; gap: 14px; margin-top: 25px; padding: 15px; background: #faf5f8; border: 1px solid #ecdce6; border-radius: 12px; }
+.booking-monogram { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 10px; background: var(--accent); color: white; font: 24px var(--display); }
+.booking-service div { flex: 1; }
+.booking-service strong,.booking-service div span { display: block; font-size: 12px; }
+.booking-service div span { margin-top: 5px; font-size: 10px; color: var(--muted); }
+.booking-service>b { color: var(--accent); }
+.booking-label { margin: 24px 0 12px; font-size: 12px; font-weight: 600; }
+.booking-days { display: grid; grid-template-columns: repeat(5,1fr); gap: 8px; }
+.booking-days>span { display: grid; gap: 7px; padding: 10px 5px; border: 1px solid #e9e0e6; border-radius: 10px; color: var(--muted); text-align: center; font: 8px var(--mono); }
+.booking-days b { font: 500 21px var(--display); color: var(--ink); }
+.booking-times { display: flex; gap: 10px; margin-top: 12px; }
+.booking-times span { flex: 1; padding: 10px; border: 1px solid #e9e0e6; border-radius: 8px; text-align: center; font: 11px var(--mono); }
+.booking-days .selected,.booking-times .selected { border-color: var(--accent); background: #f3e9f0; color: var(--accent); }
+.booking-confirm { display: flex; justify-content: space-between; margin-top: 22px; padding: 14px 17px; border-radius: 10px; background: var(--accent); color: #fff; font-size: 12px; }
+.booking-footnote { margin: 12px 0 0; text-align: center; font-size: 9px; color: var(--muted); }
+.booking-explainer { background: #fff; }
+.booking-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 35px; }
+.booking-steps article { border-top: 1px solid #ded4dd; padding-top: 24px; }
+.booking-steps article>span { font: 11px var(--mono); color: var(--accent); }
+.booking-steps h3 { margin: 23px 0 13px; font-size: 27px; }
+.booking-steps p { font-size: 14px; line-height: 1.7; color: var(--muted); }
+@media (max-width: 760px) {
+  .booking-content { padding: 20px 16px; }
+  .booking-content h2 { font-size: 29px; }
+  .booking-progress { gap: 7px; font-size: 9px; }
+  .booking-days { gap: 5px; }
+  .booking-steps { grid-template-columns: 1fr; gap: 28px; }
+}
 .aurea-stage-photo { height: 290px; width: 100%; object-fit: cover; border-radius: 160px 160px 16px 16px; }
 .day-card { position: relative; width: 88%; margin: -50px auto 0; padding: 22px; border: 1px solid #ece3e9; border-radius: 16px; background: #fff; box-shadow: 0 20px 35px #522b4114; }
 .day-card>div { display: flex; justify-content: space-between; align-items: center; gap: 15px; }

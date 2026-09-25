@@ -1,15 +1,21 @@
 {
   "profile": "marketing",
-  "sourceRoots": ["."],
-  "ownership": { "Select/Listbox": "native" },
+  "sourceRoots": [
+    "."
+  ],
+  "ownership": {
+    "Select/Listbox": "native"
+  },
   "commands": {
     "static": "python scripts/check_site.py",
-    "javascript": "node --check js/app.js && node --check js/sculpture.js"
+    "javascript": "node --check js/app.js && node --check js/sculpture.js && node --check js/i18n.js",
+    "localization": "python scripts/check_i18n.py"
   },
   "notes": [
     "Marketing site: no application CRUD contracts apply.",
     "Native select popup geometry is intentionally platform-owned.",
     "app.js owns validation and sets noValidate only when JavaScript is available, preserving no-JS native validation.",
-    "External addEventListener handlers and shared CSS textarea rules are not resolved by the literal-tag auditor. See QA.md for runtime verification."
+    "External addEventListener handlers and shared CSS textarea rules are not resolved by the literal-tag auditor. See QA.md for runtime verification.",
+    "The site-wide language selector uses native Select ownership; catalogs cover all eleven public pages and retain form field values and endpoints."
   ]
 }

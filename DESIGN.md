@@ -48,7 +48,8 @@ site is deliberately quiet, readable and grounded in existing products.
 
 - Brand/marketing site, not an authenticated application. Portuguese businesses
   choosing a website, bespoke software or operational automation.
-- Portuguese (Portugal); TVDE preserves its existing language switcher and copy.
+- Portuguese (Portugal) is the source language. All eleven public pages share
+  Portuguese, English, Spanish, French, German and Italian through `js/i18n.js`.
 - Evidence: existing service pages, product links, founder biography and README.
 - Primary visitor journey: understand the expertise, explore a product, contact.
 - No invented clients, testimonials, awards, growth metrics or experience claims.
@@ -166,6 +167,28 @@ unchanged.
 - TVDE language choice is a native, labelled select with a 44px control height.
   The OS owns its popup. The existing six catalogs and saved-locale key remain
   unchanged; `translate="no"` protects product marks and language names.
+
+### Site-wide languages and online booking — 25 September 2026
+
+`js/i18n.js` supersedes the TVDE-only runtime on all public pages. The old asset is
+retained for previously cached HTML, but no current page loads it. `css/i18n.css`
+owns the shared native language control, including the standalone 404 placement.
+The saved `lumisland_locale` follows the visitor between pages; existing TVDE
+preferences migrate on first use. Portuguese remains the no-JavaScript fallback.
+
+Five local JSON catalogs cover the full public-copy inventory, including title,
+descriptions, image alternatives, navigation, legal pages, contact-link messages,
+validation and animation controls. No visitor input is translated or transmitted
+to a translation service. Cookies retain their existing translated consent owner.
+Input values, option values, form actions, security metadata, hidden fields and
+commercial conditions remain outside the translation scope. Catalog fetches are
+cancelled on a newer selection; errors retain the current language with a retry
+message. Native popup rendering remains owned by the platform.
+
+Áurea now explicitly leads with “App de agendamento online”, shows an illustrative
+client booking page with service/date/time selection, and explains how clients'
+online bookings connect to the team's calendar. The homepage product tile uses
+the same wording. The preview is a labelled illustration, not a booking form.
 
 ## Do's and Don'ts
 

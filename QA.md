@@ -111,3 +111,38 @@ Não se afirma uma auditoria completa WCAG nem teste de entrega externa de e-mai
   limpo; não surgiram novas categorias de ocorrência.
 - Publicação em produção autorizada pelo pedido anterior “aplique no prd” e
   estendida pelo pedido de repaginar cada solução.
+
+## Idiomas globais e mensagem da Áurea — 25/09/2026
+
+- Um seletor nativo partilhado nas 11 páginas públicas, incluindo 404, obrigado,
+  privacidade, cookies e aviso legal. `admin.html` mantém o redirecionamento.
+- 917 textos inventariados em cada um dos cinco catálogos adicionais; português
+  continua a ser a origem. O teste `scripts/check_i18n.py` exige cobertura integral,
+  termos revistos e preservação dos números presentes no original.
+- Rascunhos de tradução preparados durante a autoria a partir de texto público;
+  termos de marcações, pagamentos, planos, navegação, dias da semana e primeiras
+  mensagens foram revistos em `scripts/review_locale_copy.py`. As traduções são
+  ficheiros locais; o browser não chama serviços de tradução. Não se trata de uma
+  tradução jurídica certificada.
+- Navegador a 390px: 11 rotas × EN/ES/FR/DE/IT (55 combinações), alteração de
+  título/lang/seletor, persistência entre páginas e ausência de overflow da página.
+  Em EN não ficaram frases portuguesas com mais de 35 caracteres no corpo das
+  páginas. Uma palavra alemã da grelha e títulos 404 ES/FR exigiram ajuste CSS.
+- Áurea revista em desktop e mobile: título explícito, experiência ilustrativa de
+  marcação online e secção com os três passos. Pré-visualização não submete dados.
+- Formulário de Websites: erros em EN, mudança para FR traduz erros já visíveis;
+  nome/mensagem mantidos, menu abrir/fechar traduzido e envio sintético para o
+  recetor local concluído. Nenhum pedido real enviado ao FormSubmit.
+- Falha real de catálogo IT simulada apenas na prévia local: o seletor e o conteúdo
+  permanecem em EN e mostram erro; restaurado o ficheiro, a nova tentativa muda
+  para IT e limpa o erro. Nenhum catálogo esteve ausente em produção.
+- Origem local sem consentimento anterior: banner muda para FR e o botão Refuser
+  fecha o banner. O consentimento mantém o seu componente e comportamento originais.
+- Valores dos formulários e metadados de segurança não pertencem ao inventário de
+  tradução. Textos legais portugueses e contratos HTML comparados com HEAD.
+- Verificação adicional a 320px em DE: home, quatro soluções e 404 sem overflow
+  da página nem cortes nos títulos, navegação, ações ou passos da marcação.
+  Cabeçalho DE confirmado a 1050px; Áurea PT/EN/FR confirmada a 1440px.
+- Mudança para PT durante o carregamento inicial do idioma guardado cancela o
+  pedido anterior e mantém seletor, conteúdo e atributo lang sincronizados.
+- Auditor estrito: mantêm-se as 16 ocorrências conhecidas, sem novas categorias.

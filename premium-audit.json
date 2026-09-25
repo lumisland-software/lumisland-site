@@ -3,7 +3,7 @@
     {
       "category": "violation",
       "file": "aurea/index.html",
-      "line": 38,
+      "line": 40,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -12,7 +12,7 @@
     {
       "category": "violation",
       "file": "aviso-legal.html",
-      "line": 4,
+      "line": 6,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -21,7 +21,7 @@
     {
       "category": "violation",
       "file": "cookies.html",
-      "line": 4,
+      "line": 6,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -30,7 +30,7 @@
     {
       "category": "violation",
       "file": "criacao-de-sites/index.html",
-      "line": 44,
+      "line": 46,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -39,7 +39,7 @@
     {
       "category": "violation",
       "file": "index.html",
-      "line": 82,
+      "line": 84,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -48,7 +48,7 @@
     {
       "category": "violation",
       "file": "index.html",
-      "line": 103,
+      "line": 105,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -57,7 +57,7 @@
     {
       "category": "violation",
       "file": "oficina/index.html",
-      "line": 70,
+      "line": 72,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -66,7 +66,7 @@
     {
       "category": "violation",
       "file": "privacidade.html",
-      "line": 15,
+      "line": 17,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -75,7 +75,7 @@
     {
       "category": "violation",
       "file": "sobre/index.html",
-      "line": 26,
+      "line": 28,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -84,7 +84,7 @@
     {
       "category": "violation",
       "file": "tvde/index.html",
-      "line": 38,
+      "line": 40,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -93,7 +93,7 @@
     {
       "category": "violation",
       "file": "criacao-de-sites/index.html",
-      "line": 140,
+      "line": 142,
       "message": "Application-owned form does not declare its validation owner.",
       "remediation": "Add noValidate/novalidate and implement the canonical validation contract.",
       "ruleId": "form.novalidate-missing",
@@ -102,7 +102,7 @@
     {
       "category": "violation",
       "file": "index.html",
-      "line": 161,
+      "line": 163,
       "message": "Application-owned form does not declare its validation owner.",
       "remediation": "Add noValidate/novalidate and implement the canonical validation contract.",
       "ruleId": "form.novalidate-missing",
@@ -111,7 +111,7 @@
     {
       "category": "violation",
       "file": "oficina/index.html",
-      "line": 305,
+      "line": 307,
       "message": "Application-owned form does not declare its validation owner.",
       "remediation": "Add noValidate/novalidate and implement the canonical validation contract.",
       "ruleId": "form.novalidate-missing",
@@ -120,7 +120,7 @@
     {
       "category": "violation",
       "file": "criacao-de-sites/index.html",
-      "line": 145,
+      "line": 147,
       "message": "Literal product textarea does not show evidence of the canonical resize-none rule.",
       "remediation": "Use the shared Textarea owner or apply resize-none/resize: none with adequate height or auto-grow behavior.",
       "ruleId": "form.textarea-resize-missing",
@@ -129,7 +129,7 @@
     {
       "category": "violation",
       "file": "index.html",
-      "line": 270,
+      "line": 272,
       "message": "Literal product textarea does not show evidence of the canonical resize-none rule.",
       "remediation": "Use the shared Textarea owner or apply resize-none/resize: none with adequate height or auto-grow behavior.",
       "ruleId": "form.textarea-resize-missing",
@@ -138,7 +138,7 @@
     {
       "category": "violation",
       "file": "oficina/index.html",
-      "line": 332,
+      "line": 334,
       "message": "Literal product textarea does not show evidence of the canonical resize-none rule.",
       "remediation": "Use the shared Textarea owner or apply resize-none/resize: none with adequate height or auto-grow behavior.",
       "ruleId": "form.textarea-resize-missing",
